@@ -1,0 +1,53 @@
+<div id="container" ng-if="gotData">
+
+		<div class="card chart-wrap bg ring">
+
+				<div class="chart">
+						<div class="ring-chart"  data-progress="{{displayValSys}}">
+								<div ng-if="gotData" class="circle">
+										<div class="mask full">
+												<div class="fill bg"></div>
+										</div>
+										<div class="mask half">
+												<div class="fill bg"></div>
+												<div class="fill bg fix"></div>
+										</div>
+								</div>
+								<div class="ring-fill bg"></div>
+						</div>
+						<div class="small ring-chart"  data-progress="{{displayValDia}}">
+								<div class="circle">
+										<div class="mask full">
+												<div class="fill bg"></div>
+										</div>
+										<div class="mask half">
+												<div class="fill bg"></div>
+												<div class="fill bg fix"></div>
+										</div>
+								</div>
+								<div class="ring-fill bg"></div>
+						</div>
+						<div class="mini ring-chart"  data-progress="{{displayValPulse}}">
+								<div class="circle">
+										<div class="mask full">
+												<div class="fill bg"></div>
+										</div>
+										<div class="mask half">
+												<div class="fill bg"></div>
+												<div class="fill bg fix"></div>
+										</div>
+								</div>
+								<div class="ring-fill bg"></div>
+						</div>
+				</div>
+				
+		</div>
+					
+		</div>
+		<div class="card chart-wrap bg line-only" style="display:none;">
+				
+				
+						<canvas id="line-graph-1" width="216" height="216"></canvas>
+				
+				
+		</div>

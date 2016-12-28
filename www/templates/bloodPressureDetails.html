@@ -1,0 +1,78 @@
+<ion-view view-title="Blood Pressure" cache-view="false" id="bloodPressureDetails">
+	
+	<ion-content class="blood-pressure">
+		
+		
+		 
+			<div class="main-blod">
+				<div class="left-blood">
+					<ul>
+						<li><span class="first-li">SYS|</span>{{bpDetails.currentBpSys}}</li>
+						<li><span class="second-li">DIA|</span> {{bpDetails.currentBpDia}}</li>
+						<li><span class="third-li">PUL|</span> {{bpDetails.pulseValue}}</li>
+					</ul>
+				</div>
+				<div class="row flow-chart">
+					<!-- <highchart id="chart1" config="chartConfig" class="span10"></highchart> -->
+					
+					<round-bar></round-bar>
+					
+				</div>	
+			</div>
+			
+			<div class="steps-tab-main-div">
+				<a href="#/app/bloodPressure"><div class="steps-tab-first-div"><img class="steps-tab-img" src="img/icons/icon-summary-graph.svg"></div></a>
+				<a href="#/app/bloodPressureSecond"><div class="steps-tab-sec-div"><img class="steps-tab-img" src="img/icons/icon-summary-list.svg"></div></a>
+				<div class="steps-tab-th-div"><img class="steps-tab-img" src="img/icons/icon-summary-activity.svg"></div>
+				<div class="steps-tab-fou-div"><img class="steps-tab-img" src="img/icons/icon-summary-bp.svg"></div>
+			</div>
+			<div class="dropdown-box">
+				Time Period: 
+				<select name="weeks">
+					<option value="weekly">Day View</option>
+					<option value="monthly">Weekly View</option>
+				</select>
+			</div>
+			
+			
+			
+			<div class="values-map">
+				<div class="bp-values">
+					<ul>
+						<li ng-repeat="bps in bpValues">{{bps}} -</li>
+					</ul>
+				</div>
+				<div class="bp-graph">
+
+					<div class="a4">
+					<img src="img/icons/icon-bp_status.svg">
+						<div  class="a1" ><div style="font-size: 12px;vertical-align: middle;">High <br/> Blood Pressure</div>
+							<div class="a2"><div style="font-size: 12px;vertical-align: middle;">Pre-High <br/> Blood Pressure</div>
+								<div class="a3"><div style="font-size: 12px;vertical-align: middle;">Ideal <br/> Blood Pressure</div>									
+									<div class="a5" style="font-size: 12px;vertical-align: middle;"><div>Low</div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="vertical-values"><ul><li ng-repeat="vert in verticalValues">{{vert}}</li></ul></div>
+			
+			
+			<!--<div style="margin-left:41% !important;margin-top:10px;float:left;"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>&nbsp; Send Mail</div>    <br/></div> -->
+			 
+			 
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-assertive app-footer">
+	<div class="tabs-div" style="float:left;height:57px;">
+		<div class="gained-points"><p>Gained Points</p><h3>{{healthCreditsGained}}</h3></div>
+		<div class="next-status"><p>Avg blood pressure</p><h3>{{bpDetails.currentBpSys}}/{{bpDetails.currentBpDia}}</h3></div>
+		<div class="current-status"><p>Active Days</p><h3></h3></div>
+	</div>
+  </ion-footer-bar> 
+
+</ion-view>
+
+
+

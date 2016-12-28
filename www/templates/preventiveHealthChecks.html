@@ -1,0 +1,26 @@
+<ion-view view-title="Preventive Health Checks" cache-view="false" id="preventiveHealthChecks">
+
+    <ion-content class="">
+		      <round-progress-bar></round-progress-bar>
+		      <div class="doing-well-div"><span class="doing-well-txt">Submitted Health Checks</span></div><br/>
+		<div class="table-responsive">
+		      <table class="table">
+		      	<tr>
+		      		<th>DATE</th>
+		      		<th>TYPE OF CHECK</th>
+		      		<!-- <th>VIEW</th> -->
+		      	</tr>
+		      	<tr ng-repeat="data in preventiveHealthChecksDisplay">
+		      		<td>{{data.EffectiveDate}}</td>
+		      		<td>{{data.SubactivityName}}</td>
+		      		<!-- <td><span class="glyphicon glyphicon-paperclip"></span></td> -->
+		      	</tr>
+		      </table>
+		  </div>
+    </ion-content>
+    <a href="#/app/documentsSubmit">
+	<ion-footer-bar align-title="left" class="bar-assertive app-footer">
+		<button class="button button-block button-positive">Submit New Doc's</button>
+  </ion-footer-bar> 
+</a>
+</ion-view>

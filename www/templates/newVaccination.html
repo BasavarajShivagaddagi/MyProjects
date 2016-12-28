@@ -1,0 +1,24 @@
+<ion-view view-title="New Vaccination Form" cache-view="false" id="newVaccinationForm">
+
+    <ion-content class="">
+        <div class="list" style="padding: 0.5em;">
+            <label class="item item-input borderAssessment">
+				<input placeholder="Effective Date(mm/dd/yyyy)" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" ng-model="activityDate" ng-change="dateChanged(activityDate)">
+			</label>
+
+            <label class="item item-input item-select">
+    <div class="input-label">
+      Select
+    </div>
+    <select ng-model="activityName" ng-change="changedValue(activityName)" data-ng-options="subactivityname as subactivityname.Sub_Activity_Name for subactivityname in activityNames">
+     <option ng-repeat="item in activityNames" ng-value="item">{{item.Sub_Activity_Name}}</option>
+    </select>
+  </label>
+
+        </div>
+		<div ng-show="myvalue" class="noDataError">Document submitted</div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-assertive app-footer">
+        <button class="button button-block button-positive" ng-click="selectionChange()">Submit</button>
+    </ion-footer-bar>
+</ion-view>

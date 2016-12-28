@@ -1,0 +1,63 @@
+<ion-view view-title="BMI Measurements" cache-view="false" id="bmi-measurements">
+	
+	<ion-content class="blood-pressure">
+		<!-- <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher> --> 
+		
+		 
+			<div class="main-blod">				
+				<div class="row bim-details">
+					<div class="lb-div"><div class="vertlines"><span class="vert-line">|</span></div><div class="vertlines1"><span>LB<br/>116.6</span></div></div>
+					<div class="lb-div"><div class="vertlines"><span class="vert-line-red">|</span></div><div class="vertlines1"><span>Body Fat<br/>22%</span></div></div>
+					<div class="lb-div"><div class="vertlines"><span class="vert-line-mussle">|</span></div><div class="vertlines1"><span>Muscle<br/>46%</span></div></div>
+				</div>
+				<div class="lb-details">
+					<span><img src="img/icons/icon_BMI-smiley.svg"/></span><span class="lb-value"> 1.8LB </span><span class="reduced-color">Reduced in 7 days</span>
+				</div>
+				<div class="main-range">
+					<p style="margin-left : {{bmiValueDisplay}}%;">BMI {{bimValue}}</p>
+				</div>
+				<div class="lb-range">
+					<div class="div-blue"></div><div class="number-dot"><span>18</span></div><div class="div-green"></div><div class="number-dot"><span>24</span></div><div class="div-yellow"></div><div class="number-dot"><span>30</span></div><div class="div-red"></div>
+				</div>
+			</div>
+			
+			<div class="steps-tab-main-div">
+				<div class="steps-tab-first-div" style="background-color:#3acbac"><img class="steps-tab-img" src="img/icons/icon-summary-graph.svg"></div>
+			<div class="steps-tab-sec-div"><img class="steps-tab-img" src="img/icons/icon-summary-list.svg"></div>
+				<div class="steps-tab-th-div"><img class="steps-tab-img" src="img/icons/icon-summary-activity.svg"></div>
+				<div class="steps-tab-fou-div"><img class="steps-tab-img" src="img/icons/icon-summary-bp.svg"></div>
+			</div>
+			<div class="dropdown-box">
+				Time Period: 
+				<select name="weeks">
+					<option value="weekly">Weekly View</option>
+					<option value="monthly">Monthly View</option>
+				</select>
+			</div>
+			<div class="date-header">
+				<ul>
+					<li ng-repeat="dat in dates" style="width:{{datesLength}}%">{{dat}}</li>
+				</ul>
+			 </div>
+			<div id="area-example" style="height: 227px;width:100%;" style="float:left;"></div>
+
+			<!--<div style="margin-left:41% !important;margin-top:10px;float:left;"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>&nbsp; Send Mail</div>    <br/></div> -->
+			 
+			 
+			<div style="margin-left:41% !important;margin-top:10px;float:left;"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>Send Mail</div>    <br/></div>
+			
+  </ion-content>
+
+
+  <ion-footer-bar align-title="left" class="bar-assertive app-footer">
+	<div class="tabs-div" style="float:left;">
+		<div class="gained-points"><p>Points Earned</p><h3>12400</h3></div>
+		<div class="next-status"><p>Reduced in last 7 days</p><h3>1.8LB</h3></div>
+		<div class="current-status"><p>Avg bmi</p><h3>22.5</h3></div>
+	</div>
+  </ion-footer-bar> 
+
+</ion-view>
+
+
+

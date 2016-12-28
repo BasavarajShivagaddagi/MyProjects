@@ -1,0 +1,58 @@
+<ion-view view-title="Premium Savings" cache-view="false" id="fitnessRewardSavings">
+	
+	<ion-content style="background:#0079c2 !important">
+		<div ng-if="showError" class="noDataError" style=""><img src="img/icon_sad-face.svg" class="noDataImg"></div>
+		<div ng-if="showSuccess">
+		 <ion-list type="list-inset" class="savings-list health-overview fitness-reward">  
+			<div id="chartfitness" class="chart"></div>
+			<!-- <canvas id="doughnut" class="chart chart-doughnut chart-back-draun"
+			  chart-data="data" chart-labels="labels" ng-click="getClickedEvent(labels)">Premium Saved
+			</canvas>    -->
+			<div class="below-display">
+				<div class="individual-display" ng-repeat="dat in datas"><div class="small-div" style="border : 1px solid {{colors[$index]}};background : {{colors[$index]}}"> </div><div class="content-div">{{dat.label}}</div></div>
+				
+			</div>
+			<div class="total-saved dynamic-saved" style="background : {{presentColor}}">Fitness Reward savings</div>
+			<!-- <canvas id="line" class="chart chart-line" chart-data="data1"
+					chart-labels="labels1" chart-series="series" chart-options="options"
+					chart-dataset-override="datasetOverride" chart-click="onClick"
+			</canvas> -->
+			
+			<div class="chartarea">
+			 
+				<div class="total-fit-count" style="color : #FFB900;"><span><img src="img/icons/icon_points-table.svg"/></span><span class="fit-pts">Points Earned</span><span class="fit-gained"> ({{pointsEarned}})</span></div>
+					 <fusioncharts 
+						width="100%" 
+						height="150"
+						type="column2d"
+						datasource="{{myDataSource}}" showBorder="0"
+					></fusioncharts>		   
+			</div>	
+			<div class="bar-img-div" ng-repeat="img in imgSrc">
+				<img class="bar-img" src="{{img}}"/>
+			</div>
+			<div class="lower-part">
+				<div class="fitness-status-main">
+					<div class="fitness-status1"></div><div class="fitness-status-dot"></div><div class="fitness-status2"></div><div class="fitness-status-dot"></div><div class="fitness-status3"></div><div class="fitness-status-dot"></div><div class="fitness-status4"></div><div class="fitness-status-dot"></div><div class="fitness-status5"></div>				
+				</div>
+				<div class="active-image"></div>
+				<div class="fitness-status-main12">
+					<div class="fitness-status12">Bronze</div><div class="fitness-status12">Silver</div><div class="fitness-status12">Gold</div><div class="fitness-status12">Platinum</div>				
+				</div>
+			</div> 
+	  </ion-list>
+		</div>
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-assertive app-footer" style="width:102%;margin-left:-4px;">
+	<div class="tabs-div" style="float:left;">
+		<div class="gained-points"><p>Health credits gained</p><h3>{{healthCreditsGained | limitTo : 4}}</h3></div>
+		<div class="next-status"><p>Maximum Health Credits</p><h3>{{maxHealthCredits}}</h3></div>
+		<div class="current-status"><p>How to get</p><h3></h3></div>
+	</div>
+  </ion-footer-bar> 
+
+</ion-view>
+
+
+

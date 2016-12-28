@@ -1,0 +1,60 @@
+<ion-view view-title="Blood Pressure" cache-view="false" id="bloodPressure">
+	
+	<ion-content class="blood-pressure">
+		
+		
+		 
+			<div class="main-blod">
+				<div class="left-blood">
+					<ul>
+						<li><span class="first-li">SYS|</span>{{bpDetails.currentBpSys}}</li>
+						<li><span class="second-li">DIA|</span> {{bpDetails.currentBpDia}}</li>
+						<li><span class="third-li">PUL|</span> {{bpDetails.pulseValue}}</li>
+					</ul>
+				</div>
+				<div class="row flow-chart">
+					<!-- <highchart id="chart1" config="chartConfig" class="span10"></highchart> -->
+					<round-bar></round-bar>
+				</div>	
+			</div>
+			
+			<div class="steps-tab-main-div">
+				<div class="steps-tab-first-div" style="background-color:#3acbac"><img class="steps-tab-img" src="img/icons/icon-summary-graph.svg"></div>
+				<a href="#/app/bloodPressureSecond"><div class="steps-tab-sec-div"><img class="steps-tab-img" src="img/icons/icon-summary-list.svg"></div></a>
+				<div class="steps-tab-th-div"><img class="steps-tab-img" src="img/icons/icon-summary-activity.svg"></div>
+				<div class="steps-tab-fou-div"><img class="steps-tab-img" src="img/icons/icon-summary-bp.svg"></div>
+			</div>
+			<div class="dropdown-box">
+				Time Period: 
+				<select name="weeks">
+					<option value="weekly">Weekly View</option>
+					<option value="monthly">Monthly View</option>
+				</select>
+			</div>
+			<div class="date-header">
+				<ul>
+					<li ng-repeat="dat in dates" style="width:{{datesLength}}%">{{dat}}</li>
+				</ul>
+			 </div>
+			<div id="area-example" style="height: 227px;width:100%;" style="float:left;"></div>
+
+			<!--<div style="margin-left:41% !important;margin-top:10px;float:left;"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>&nbsp; Send Mail</div>    <br/></div> -->
+			 
+			 
+			<div style="margin-left:41% !important;margin-top:10px;float:left;"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>Send Mail</div>    <br/></div>
+			
+  </ion-content>
+
+
+   <ion-footer-bar align-title="left" class="bar-assertive app-footer">
+	<div class="tabs-div" style="float:left;height:57px;">
+		<div class="gained-points"><p>Gained Points</p><h3>{{bpDetails.heathCreditsGained}}</h3></div>
+		<div class="next-status"><p>Avg blood pressure</p><h3>{{bpDetails.currentBpSys}}/{{bpDetails.currentBpDia}}</h3></div>
+		<div class="current-status"><p>Active Days</p><h3></h3></div>
+	</div>
+  </ion-footer-bar> 
+
+</ion-view>
+
+
+

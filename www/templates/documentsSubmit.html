@@ -1,0 +1,65 @@
+<ion-view view-title="Documents Submission" cache-view="false" id="documentsSubmitForm">
+
+    <ion-content class="">
+		<div class="list" style="padding: 0.5em;">
+			<label class="item item-input borderAssessment">
+				<input placeholder="Effective Date(mm/dd/yyyy)" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" ng-model="docSub.EffectiveDate" ng-change="dateChanged(docSub.EffectiveDate)">
+			</label>
+			
+			<label class="item item-input borderAssessment">
+			<input type="number" placeholder="Weight (Pounds)" ng-model="docSub.WeightInPounds">
+			
+		  </label>
+		  
+		  <label class="item item-input borderAssessment">
+			
+			<input type="number" placeholder="Height (Inches)" ng-model="docSub.HeightInInches">
+		  </label>
+			
+			
+			<label class="item item-input borderAssessment">
+			<input type="number" placeholder="Random Blood Glucose (mMoL/L)" ng-model="docSub.RandomBloodGlucose">
+		  </label>
+		  <label class="item item-input borderAssessment">
+			<input type="number" placeholder="Fasting Blood Glucose (mMoL/L)" ng-model="docSub.FastingBloodGlucose">
+		  </label>
+			
+			<label class="item item-input borderAssessment">
+			<input type="number" placeholder="Systolic BP" ng-model="docSub.SystolicBp">
+			
+		  </label>
+		  
+		  <label class="item item-input borderAssessment">
+			
+			<input type="number" placeholder="Diastolic BP" ng-model="docSub.DiastolicBp">
+		  </label>
+			
+			
+			<label class="item item-input borderAssessment">
+			<input type="number" placeholder="Total Cholesterol" ng-model="docSub.TotalCholesterol">
+		  </label>
+		  
+		  <label class="item item-input borderAssessment">
+			<input type="number" placeholder="HDL(mMoL/L)" ng-model="docSub.HDL">
+			
+		  </label>
+		  <label class="item item-input borderAssessment">
+			
+			<input type="number" placeholder="LDL(mMoL/L)" ng-model="docSub.LDL">
+		  </label>
+		  
+		  
+		  <label class="item item-input borderAssessment">
+			<input type="number" placeholder="Cholesterol Ratio" ng-model="docSub.CholesterolRatio">
+		  </label>
+		 <!--  <label for="file-upload" class="custom-file-upload item item-input">
+			<input id="file-upload" type="file"/>
+				<i class="icon ion-paperclip" style="float: right;font-size: 1.8em;"></i>Upload Medical Document
+			</label> -->
+		</div>
+		<div ng-show="myvalue" class="noDataError">Document submitted</div>
+    </ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive app-footer">
+		<button class="button button-block button-positive" ng-click="submitDocss(docSub)">Submit</button>
+  </ion-footer-bar> 
+</ion-view>

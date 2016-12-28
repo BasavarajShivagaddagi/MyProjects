@@ -1,0 +1,75 @@
+<ion-view view-title="Premium Savings" cache-view="false">
+	
+	<ion-content>
+		<!-- <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher> --> 
+
+		
+		 <ion-list type="list-inset" class="savings-list health-overview">  
+			<div class="chart"></div>
+			<!-- <canvas id="doughnut" class="chart chart-doughnut chart-back-draun"
+			  chart-data="data" chart-labels="labels" ng-click="getClickedEvent(labels)">Premium Saved
+			</canvas>    -->
+			<div class="below-display">
+				<div class="individual-display" ng-repeat="datas in maindata"><div class="small-div" style="border : 1px solid {{datas.color}};background : {{datas.color}}"> </div><div class="content-div">{{datas.description}}</div></div>
+				
+			</div>
+			<div class="total-saved dynamic-saved" style="background : {{presentColor}}">Total Premium Saved</div>
+			<!-- <canvas id="line" class="chart chart-line" chart-data="data1"
+					chart-labels="labels1" chart-series="series" chart-options="options"
+					chart-dataset-override="datasetOverride" chart-click="onClick"
+			</canvas> -->
+			
+			<div fusioncharts width="100%" height="180" type="msline" chart="{{attrs}}" categories="{{categories}}" dataset="{{dataset}}"></div>
+			
+			<div class="lower-status">
+				<div class="outer-main">
+					<div class="inner-status"></div>
+				</div>
+				
+				<div class="outer-second">
+					<div class="inner-second"></div>
+				</div>
+				
+				<div class="outer-third active-status">
+					<div class="inner-third"></div>
+				</div>
+				
+				<div class="outer-fourth">
+					<div class="inner-fourth"></div>
+				</div>
+			</div>
+			<div class="lower-status1">
+				<div class="outer-main1">
+					UNDERWEIGHT <br/> <18.5
+				</div>
+				
+				<div class="outer-second1">
+					HEALTHY <br/> 18.5 - 25.5
+				</div>
+				
+				<div class="outer-third active-status1">
+					OVERWEIGHT <br/> 25 - 29.9
+				</div>
+				
+				<div class="outer-fourth1">
+					OBESE <br/> > 30
+				</div>
+			
+			</div>
+			 
+	  </ion-list>
+		
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-assertive app-footer">
+	<div class="tabs-div" style="float:left;">
+		<div class="gained-points"><p>Gained Points</p><h3>12400</h3></div>
+		<div class="next-status"><p>Avg blood pressure</p><h3>120/80</h3></div>
+		<div class="current-status"><p>Active Days</p><h3>22</h3></div>
+	</div>
+  </ion-footer-bar> 
+
+</ion-view>
+
+
+

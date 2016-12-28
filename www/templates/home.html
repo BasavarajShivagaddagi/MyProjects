@@ -1,0 +1,60 @@
+<ion-view view-title="" cache-view="false" id="fitbitHome">
+
+    <ion-content class="headerall">
+	
+        <div class="homeText userImg xp-flt-mdlfr-sltbtn">
+            <img class="img-circular" src="img/user.jpg" />
+			<div ng-click="gotoMyProfile()">
+				<p class="userName" ng-model="user">{{user}}</p>
+				<i class="icon ion-chevron-right popImg iconAlign"></i>
+				<p class="userPhone" ng-model="phoneNumber">Phone No {{phoneNumber}}</p>
+			</div>
+
+        </div>
+
+        <div class="row">
+            <div class="col navBlock1" ng-click="gotoMyPolicy()">
+				
+				<p class="homeNav"><img class="navIcons1"  src="img/icons/icon-mypolicies.svg" /></p>
+				
+                <p class="homeNavText"> My</p>
+
+                <p class="homeNavText homeNavMargin">Policies</p>
+
+            </div>
+            <div class="col navBlock2" ng-click="gotoMyFitDevice()">
+                <p class="homeNav"><img class="navIcons2" src="img/icons/icon-mydevices.svg" /></p>
+
+                <p class="homeNavText"> My</p>
+
+                <p class="homeNavText homeNavMargin">Fitness Devices</p>
+            </div>
+            <!-- <div class="col navBlock3" ng-click="gotoMyhealthOverview()">
+               <p class="homeNav"><img class="navIcons3" src="img/icons/icon-myhealth.svg" /></p>
+
+                <p class="homeNavText"> My</p>
+
+                <p class="homeNavText homeNavMargin">Health Overview</p>
+            </div> -->
+        </div>
+		<div class="newsText" >News Feed</div>
+        <div class="list" ng-repeat="news in feeds" ng-click="viewNewsDetails(news.newsID, news.MessageBody, news.newsFeedDate, news.Headline)">
+            <a class="item item-avatar" href="">
+                
+				<img class="listIcon" src="img/newsFeed.jpg">
+				<div class = "row">
+				   
+				   <div class = "col col-75"><p class="newsHead">{{ news.Headline }}</p></div>
+				   <div class = "col col-25"> <p class="newsDate">{{ news.newsFeedDate | date:' MMM d, y'}}</p>
+               </div>
+				</div>
+				
+				<div class = "row">
+				 <p class="newsContent">{{ news.MessageBody }}</p>
+				</div>
+  
+            </a>
+        </div>
+
+    </ion-content>
+</ion-view>

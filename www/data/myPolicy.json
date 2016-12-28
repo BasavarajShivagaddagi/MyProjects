@@ -1,0 +1,51 @@
+{
+    "status": true,
+    "data": {
+        "policiesData": [
+            {
+                "policy_number": "53450049",
+                "policy_coverageamount": "2000000.00",
+                "policy_issue_date": "2014-11-17T00:00:00.000Z",
+                "policy_product_name": "Term Life Product 1",
+                "policy_line_of_business": "LT",
+                "premium_discount_flag": "Y    ",
+                "policy_premium_due_date": "2016-07-20",
+                "policy_premium_frequency": "12",
+				"Policy_Status" : "I"
+            },
+            {
+                "policy_number": "53450035",
+                "policy_coverageamount": "900000.00",
+                "policy_issue_date": "2015-11-27T00:00:00.000Z",
+                "policy_product_name": "Whole Life Product",
+                "policy_line_of_business": "LW",
+                "premium_discount_flag": "Y    ",
+                "policy_premium_due_date": "2016-07-06",
+                "policy_premium_frequency": "12",
+				"Policy_Status" : "S"
+            },
+            {
+                "policy_number": "53450009",
+                "policy_coverageamount": "45000.00",
+                "policy_issue_date": "2016-01-09T00:00:00.000Z",
+                "policy_product_name": "Guaranteed Deferred Annuity",
+                "policy_line_of_business": "AFD",
+                "premium_discount_flag": "N    ",
+                "policy_premium_due_date": "2016-06-10",
+                "policy_premium_frequency": "12",
+				"Policy_Status" : "S"
+            },
+            {
+                "policy_number": "53450009",
+                "policy_coverageamount": "45000.00",
+                "policy_issue_date": "2016-01-09T00:00:00.000Z",
+                "policy_product_name": "Guaranteed Deferred Annuity",
+                "policy_line_of_business": "AFD",
+                "premium_discount_flag": "N    ",
+                "policy_premium_due_date": "2016-06-10",
+                "policy_premium_frequency": "12",
+				"Policy_Status" : "S"
+            }
+        ]
+    }
+}

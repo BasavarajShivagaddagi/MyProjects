@@ -1,0 +1,35 @@
+<ion-view view-title="Steps" id="stepsSummaryList">
+<ion-content>
+<round-progress-bar-steps ng-if="steps"></round-progress-bar-steps>
+
+
+    <div class="steps-tab-main-div">
+        <a href="#/app/stepsSummaryList" style="background-color:#eee"><div class="steps-tab-first-div"><img class="steps-tab-img" src="img/icons/icon-summary-graph.svg"></div></a>
+        <a href="#/app/stepsSummaryDaysList" ><div class="steps-tab-sec-div" style="background-color:#3acbac"><img class="steps-tab-img" src="img/icons/icon-summary-list_selected(1).svg"></div></a>
+        <a href="#/app/fitBitCalendar" style="background-color:#eee"><div class="steps-tab-th-div" style="background-color:#eee"><img class="steps-tab-img" src="img/icons/icon-summary-activity.svg"></div></a>
+        <div class="steps-tab-fou-div" style="background-color:#eee"><img class="steps-tab-img" src="img/icons/icon-summary-bp.svg"></div>
+    </div>
+    <br/><br/><br/>
+    <div class="bp-details">
+      <div class="bp1" ng-repeat="steps in newArr | orderBy : ActivityDateTime"> 
+     
+        <!-- <p class="month-header" style="float:left;">{{steps.startEnd}}</p> -->
+        <!-- <p  class="steps-th">6580 steps</p> -->
+        <p class="month-header" style="float:left;font-size:15px !important"></p><p></p>
+        <table style="width : 92%" class="details-table">
+        <tr ng-repeat="det in steps">
+
+          <td class="date-col">{{det.ActivityDateTime | date: 'MM-dd-yyyy'}}</td>
+          <td class="points-col">{{det.Value}}</td>
+        </tr>
+        </table>
+        <br/>
+     <!--  </div> -->
+    </div>
+    </div>
+   <!--  <div class="send-mail-main-div"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>Send Mail</div>    <br/></div> -->
+</ion-content>
+        <ion-footer-bar align-title="left" class="bar-assertive app-footer" style="width:102%;">
+  <div class="send-mail-main-div"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>Send Mail</div><br/></div>
+  </ion-footer-bar> 
+</ion-view>

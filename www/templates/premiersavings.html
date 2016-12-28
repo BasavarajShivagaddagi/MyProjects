@@ -1,0 +1,53 @@
+<ion-view view-title="Premium Savings" cache-view="false" id="preSavings">
+	
+	<ion-content>
+	<div ng-show="myvalue1" class="noDataError" style=""><img src="img/icon_sad-face.svg" class="noDataImg"></div>
+		<!-- <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher> --> 
+
+		
+		
+		 <ion-list type="list-inset pre-savings" class="savings-list pre-save health-overview">  
+			<div class="chart" id="pchart"></div>
+			
+			<div class="below-display">
+				<div class="individual-display" ng-repeat="datas in maindata"><div class="small-div" style="border : 1px solid {{datas.color}};background : {{datas.color}}"> </div><div class="content-div">{{datas.description}}</div></div>
+				
+			</div>
+
+			
+			 
+	  </ion-list>
+		
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies__selected.svg" />
+					<p class="footerText footerText1">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+					<p class="footerText">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+
+</ion-view>
+
+
+

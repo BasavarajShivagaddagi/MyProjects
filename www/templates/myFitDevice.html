@@ -1,0 +1,56 @@
+<ion-view view-title="Fitness Devices & Apps" cache-view="false" id="fitnessDevice">
+
+    <ion-content class="headerall">
+	
+        <div class="homeText userImg">
+            <img class="img-circular" src="img/user.jpg" />
+			<div>
+				<p class="userNameInner" ng-model="user">{{user}}</p>
+			</div>
+        </div>
+		<div class="newsText" >My Devices</div>
+        <div class="list test">
+		   <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-fitbit.svg" />
+		   <span class="input-label" style="<!-- line-height: 2; -->padding-left: 0.7em;font-weight: 500;">FitBit Band : <span style="color:#808080;font-size: 10px;"><br/>Last Sync : 10:25am, 02 Aug 2016</span></span>
+		   <ion-toggle ng-model="airplaneMode1" style="border-color: transparent;border-color: transparent;right: 0;position: absolute;" toggle-class="toggle-balanced"></ion-toggle>
+		   </label>
+		   <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-alexa.png" />
+		   <span class="input-label" style="<!-- line-height: 2; -->padding-left: 0.7em;font-weight: 500;">Alexa : <span style="color:#808080;font-size: 10px;"><br/>Last Sync : 08:25pm, 02 Sept 2016</span></span>
+		   <ion-toggle ng-model="airplaneMode2" style="border-color: transparent;border-color: transparent;right: 0;position: absolute;" toggle-class="toggle-balanced "></ion-toggle>
+		   </label>
+		   
+		   <p style="font-size: 14px;text-align: center;line-height: 3;color: #808080;" ng-click="fitbitAddDevice()">
+			<i class="icon ion-ios-plus-outline"></i>  Add Device
+			</p>
+		</div>
+
+    </ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices__selected.svg" />
+					<p class="footerText footerText1">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+					<p class="footerText">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,135 @@
+<ion-view view-title="Health/Fitness Overview" cache-view="false">
+	
+	<ion-content>
+		<!-- <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher> --> 
+		<div ng-if="showError" class="noDataError" style=""><img src="img/icon_sad-face.svg" class="noDataImg"></div>
+
+		<div ng-if="showSuccess">
+		 <ion-list type="list-inset" class="dashboard-list health-overview">  
+			 <div class="tabs-div">
+				<div class="gained-points"><p>Gained Points</p><h3>{{response.GrandTotal}}</h3></div>
+				<div class="next-status"><p>Pomits to next status</p><h3>{{response.NextStatusPoints}}</h3></div>
+				<div class="current-status"><p>Current status</p><h3>{{response.FitnessLevelStatus}}</h3></div>
+			</div>
+			
+			<div class="fitness-status-main">
+				<div class="fitness-status1"></div><div class="fitness-status-dot"></div><div class="fitness-status2"></div><div class="fitness-status-dot"></div><div class="fitness-status3"></div><div class="fitness-status-dot"></div><div class="fitness-status4"></div><div class="fitness-status-dot"></div><div class="fitness-status5"></div>				
+			</div>
+			<div class="active-image"></div>
+			<div class="fitness-status-main12">
+				<div class="fitness-status12">Bronze</div><div class="fitness-status12">Silver</div><div class="fitness-status12">Gold</div><div class="fitness-status12">Platinum</div>				
+			</div>
+			
+			
+			<ion-item ng-click = "healthOverview()">
+				  <div class="item-icon-left">
+				  <img src="img/icons/icon-fitns-myhealth.svg"/>
+				  <h2>My Health Overview</h2>			 
+				  </div>
+				  <div class="item-icon-right">
+				  <i class="icon ion-chevron-right right-icon"></i>
+				  </div>
+			</ion-item>
+			
+			<ion-item ng-click = "fitnessSummary()">
+			
+				  <div class="item-icon-left">
+				 <img src="img/icons/icon-fitns-summary.svg"/>
+				  <h2>Fitness Summary</h2>			 
+				  </div>
+				  <div class="item-icon-right">
+				  <i class="icon ion-chevron-right right-icon"></i>
+				  </div>
+		    
+			</ion-item>
+			
+			
+			<ion-item ng-click= "screeningPrevention()" >
+				  <div class="item-icon-left">
+				  <img src="img/icons/icon-HealthScrening.svg"/>
+				  <h2>Screening & Prevention</h2>			  
+				  </div>
+				  <div class="item-icon-right">
+				  <i class="icon ion-chevron-right right-icon"></i>
+				  </div>
+			</ion-item>
+
+			<ion-item>
+			<a href="#/app/earnMorePoints">
+				  <div class="item-icon-left">
+				  <img src="img/icons/icon-gainedpoints.svg"/>
+				  <h2>How to earn more points</h2>			  
+				  </div>
+				  <div class="item-icon-right">
+				  <i class="icon ion-chevron-right right-icon"></i>
+		    </a>
+				  </div>
+			</ion-item>
+			<ion-item ng-click= "pointsStatement()">
+			<a href="#/app/pointsStatement">
+				  <div class="item-icon-left">
+				<img src="img/icons/icon-fitns-myhealth.svg"/>
+				  <h2>Points Statement</h2>			  
+				  </div>
+				  <div class="item-icon-right">
+				  <i class="icon ion-chevron-right right-icon"></i>
+				  </div>
+			</a>
+			</ion-item>
+			<ion-item ng-click= "offerAnsSavings()">
+			<a href="#/app/offersAndSavings">
+				  <div class="item-icon-left">
+				  <img src="img/icons/icon-fitns-offers.svg"/>
+				  <h2>Offer & Savings</h2>			  
+				  </div>
+				  <div class="item-icon-right">
+				  <i class="icon ion-chevron-right right-icon"></i>
+		    </a>
+				  </div>
+			</ion-item>
+			<ion-item ng-click= "healthTips()"> 
+			<a href="#/app/healthTipsList">
+				  <div class="item-icon-left">
+				  <img src="img/icons/icon-fitns-healthtips.svg"/>
+				  <h2>Health Tips</h2>			  
+				  </div>
+				  <div class="item-icon-right">
+				  <i class="icon ion-chevron-right right-icon"></i>
+				  </div>
+			</a>
+			</ion-item>
+	  </ion-list>
+	</div>	
+  </ion-content>
+
+   <ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview_selected.svg" />
+					<p class="footerText footerText1">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar> 
+
+</ion-view>
+
+
+

@@ -1,0 +1,42 @@
+<ion-view view-title="Sleep" id="healthTips" >
+  <ion-content>
+
+ <round-progress-bar-steps></round-progress-bar-steps>
+
+ <div class="steps-tab-main-div">
+  <a href="#/app/hoursSleptSummaryList" style="background-color:#eee"><div class="steps-tab-first-div"><img class="steps-tab-img" src="img/icons/icon-summary-graph.svg"></div></a>
+  <a href="#/app/hoursSleptDaysSummaryList" style="background-color:#eee"><div class="steps-tab-sec-div"><img class="steps-tab-img" src="img/icons/icon-summary-list.svg"></div></a>
+  <a href="#/app/sleepCalendar"><div class="steps-tab-th-div" style="background-color:#3acbac"><img class="steps-tab-img" src="img/icons/icon-summary-activity_selected(1).svg"></div></a>
+  <div class="steps-tab-fou-div" style="background-color:#eee"><img class="steps-tab-img" src="img/icons/icon-summary-bp.svg"></div>
+</div>
+<br/><br/>
+  <div>
+  <br/>
+    <div style="margin-left:4%;width:90%;">
+        <ion-slides options="options" slider="data.slider">
+            <ion-slide-page ng-repeat="month in months" ng-class="{'highlightMonth': $index == activeMonth}"><div >{{month}}</div></ion-slide-page>           
+        </ion-slides>
+        <div id="toempty" style="margin-left:5%;">
+        <div ng-if="!displayResponse.status">
+            <div>{{displayResponse.message}}</div>       
+        </div>
+        <div ng-if="displayResponse.status">
+            <div ng-repeat="date in displayResponse.finalDate | orderBy : 'date'">
+                <div ng-class="date.active == 'yes'?'checked-active-add':'checked-active'">
+                  <span>{{date.date}}</span>
+                </div>
+<!--                 <div class="checked-active-add">
+                      <span>{{date}}</span>
+                </div> -->
+            </div>          
+        </div>
+
+        </div>
+    </div>
+  </div>		
+  		
+  </ion-content>
+<ion-footer-bar align-title="left" class="bar-assertive app-footer" style="width:102%;">
+  <div class="send-mail-main-div"><div class="send-mail" style="width:100%;"><span class="glyphicon glyphicon-envelope send-env"></span>&nbsp;Send Mail</div><br/></div>
+  </ion-footer-bar> 
+</ion-view>

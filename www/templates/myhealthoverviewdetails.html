@@ -1,0 +1,54 @@
+<ion-view view-title="My Health Overview" cache-view="false" id="myHealthOverview">
+	
+	<ion-content>
+
+		 <round-progress-bar-eff-age></round-progress-bar-eff-age>
+		  <div class="doing-well-div"><span class="glyphicon glyphicon-ok doing-well-icon"></span><span class="doing-well-txt">Doing Well</span></div>
+		 <ion-list type="list-inset" class="dashboard-list health-overview">  
+
+
+
+			<ion-item ng-repeat="healthDetail in healthDetails" class="health-details"> 
+				  <div class="item-icon-left">
+				  <h2>{{healthDetail.title}}</h2>			  
+				  </div>
+				  <div class="item-icon-right">
+					<i ng-show="{{healthDetail.status}}" class="icon glyphicon glyphicon-ok-sign right-icon icon-green"></i>
+					<i ng-hide="{{healthDetail.status}}" class="icon glyphicon glyphicon-remove-circle right-icon icon-red"></i>
+				  </div>
+			</ion-item>
+	  </ion-list>
+		
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview_selected.svg" />
+					<p class="footerText footerText1">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+
+</ion-view>
+
+
+

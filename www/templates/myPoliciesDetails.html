@@ -1,0 +1,93 @@
+<ion-view view-title="" cache-view="false" id="myPoliciesDetails">
+
+    <ion-content class="headerall">
+
+        <div class="homeText userImg">
+            <img class="img-circular" src="img/user.jpg" />
+            <div>
+                <p class="userNameInner" ng-model="user">{{user}}</p>
+            </div>
+        </div>
+		
+		<a href="#/app/premiersavings">
+			<img class="myPremiumSave" src="img/icons/icon-premiumsaving.svg" ng-click="gotoPremiumSavings()"/>
+		</a>
+		
+		<a href="#/app/healthfitness">
+			<img class="myPremiumSave1" src="img/icons/icon-healthoverview.svg" ng-click="gotoMyhealthOverview()"/>
+		</a>
+		
+
+        <div class="list">
+            <label class="item item-input">
+			   <span class="input-label">Policy Number : <span style="color:#808080;">{{policyDetails.policy_number}}</span></span>
+		   </label>
+            <label class="item item-input">
+			   <span class="input-label">Policy Coverage Amount : <!-- <span style="color:#808080;">{{policyAmount}}</span> --></span>
+			   <div class = "row" style="float: right;">
+					<p ng-class="getCornersCol1(policyDetails.policy_status)">{{ policyDetails.policy_coverageamount}}</p>
+				</div>
+				<!-- <div class = "row" style="float: right;" ng-if= "IsActive=='1'">
+					<p class="" style="color:#efb11b;font-size: 16px;">{{ policyDetails.policy_coverageamount}}</p>
+				</div>
+				<div class = "row" style="float: right;" ng-if= "IsActive=='2'">
+					<p class="" style="color:#6bb807;font-size: 16px;">{{ policyDetails.policy_coverageamount}}</p>
+				</div>	 --> 
+		   </label>
+            <label class="item item-input">
+			   <span class="input-label">Effective Date : <span style="color:#808080;">{{policyDetails.policy_status_eff_date | date:'M-d-yyyy'}}</span></span>
+		   </label>
+            <!-- <label class="item item-input">
+			   <span class="input-label">SSN : <span style="color:#808080;">{{SSN}}</span></span>
+		   </label> -->
+            <label class="item item-input">
+			   <span class="input-label">Policy Product Name : <span style="color:#808080;">{{policyDetails.policy_product_name}}</span></span>
+		   </label>
+            <label class="item item-input">
+			   <span class="input-label">Policy Line of Business : <span style="color:#808080;">{{policyDetails.policy_line_of_business}}</span></span>
+		   </label>
+            <label class="item item-input">
+			   <span class="input-label">Premium Amount : <span style="color:#808080;">{{policyDetails.policy_premium}}</span></span>
+		   </label>
+            <label class="item item-input">
+			   <span class="input-label">Policy Premium Due Date : <span style="color:#808080;">{{policyDetails.policy_premium_due_date | date:'M-d-yyyy'}}</span></span>
+		   </label>
+            <label class="item item-input">
+			   <span class="input-label">Policy Premium Frequency : <span style="color:#808080;">{{policyDetails.policy_premium_frequency}}</span></span>
+		   </label>
+           <!--  <label class="item item-input">
+			   <span class="input-label">Payment Mode : <span style="color:#808080;">{{policyDetails.paymentMode}}</span></span>
+		   </label>
+            <label class="item item-input">
+			   <span class="input-label">Underwriting Class : <span style="color:#808080;">{{policyDetails.underWritingClass}}</span></span>
+		   </label> -->
+        </div>
+
+    </ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies__selected.svg" />
+					<p class="footerText footerText1">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+					<p class="footerText">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+</ion-view>

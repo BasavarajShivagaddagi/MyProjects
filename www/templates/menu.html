@@ -1,0 +1,110 @@
+<ion-side-menus enable-menu-with-back-views="false" id="menuPage" cache-view="false">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-stable headerall">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+            </ion-nav-buttons>
+            <ion-nav-buttons side="right">
+                <!-- <img class="headerImg" src="img/icons/icon-notification.svg" menu-toggle="right"/> -->
+                <i class="ion ion-ios-bell-outline headerImg" ng-click="gotoAlerts()"></i>
+                <i class="ion ion-android-more-vertical headerImg1"></i>
+                <!-- <i class="icon ion-power popImg" ng-click="logout()"></i> -->
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent">
+            <!-- <ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myhealthoverviewdetails">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+					<p class="footerText">HEALTH OVERVIEW</p>
+				</a>
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar> -->
+        </ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <!-- <ion-header-bar class="bar-stable">
+    </ion-header-bar> -->
+        <ion-content>
+            <ion-list>
+                <ion-item menu-toggle="left" style="background: #0079c2 !important;height: 127px;">
+                    <div class="homeText userImg">
+                        <img class="img-circular-panel" src="img/user.jpg" />
+                        <div>
+                            <p class="userName1" ng-model="user">{{user}}</p>
+                        </div>
+                    </div>
+                </ion-item>
+                <ion-item menu-toggle="left" href="#/app/newsFeed">
+					<span><img class="menuIcon" src="img/icons/icon-newsfeed.svg" /></span>
+                    <span style="padding-left: 0.5em;">News feed</span>
+                </ion-item>
+                <ion-item menu-toggle="left" href="#/app/healthTipsList">
+					<span><img class="menuIcon" src="img/icons/icon-fitns-healthtips.svg" /></span>
+                    <span style="padding-left: 0.5em;">Health tips</span>
+                </ion-item>
+                <ion-item menu-toggle="left" href="#/app/offersAndSavings">
+					<span><img class="menuIcon" src="img/icons/icon-fitns-offers.svg" /></span>	
+                    <span style="padding-left: 0.5em;">Offers & Savings</span>
+                </ion-item>
+                <ion-item menu-toggle="left" href="#/app/earnMorePoints">
+					<span><img class="menuIcon" src="img/icons/icon-gainedpoints.svg" /></span>
+                    <span style="padding-left: 0.5em;">How to earn more points</span>
+                </ion-item>
+				<ion-item menu-toggle="left" href="#/app/fitnesSummary">
+					<span><img class="menuIcon" src="img/icons/icon-fitns-summary.svg" /></span>
+                    <span style="padding-left: 0.5em;">Fitness Summary</span>
+                </ion-item>
+				<ion-item menu-toggle="left" href="#/app/pointsStatement">
+					<span><img class="menuIcon" src="img/icons/icon-dob.svg" /></span>
+                    <span style="padding-left: 0.5em;">Points Statements</span>
+                </ion-item>
+                <ion-item menu-toggle="left" href="#/app/premiersavings">
+					<span><img class="menuIcon" src="img/icons/icon_premiumsaving.svg" /></span>
+                    <span style="padding-left: 0.5em;">Premium Savings</span>
+                </ion-item>
+                <ion-item menu-toggle="left" href="#/app/alerts">
+					<span><img class="menuIcon" src="img/icons/icon_alerts_notifications.svg" /></span>
+                    <span style="padding-left: 0.5em;">Notifications & Reminders</span>
+                </ion-item>
+                <!-- <ion-item menu-toggle="left" href="#/app/healthfitness">
+					<span><img class="menuIcon" src="img/icons/icon-fitns-healthtips.svg" /></span>
+                    <span style="padding-left: 0.5em;">Health/Fitness Overview</span>
+                </ion-item> -->
+				<!-- <ion-item menu-toggle="left" href="#/app/bloodPressureSecond">
+					<span><img class="menuIcon" src="img/icons/icon-fitns-healthtips.svg" /></span>
+                    <span style="padding-left: 0.5em;">Blood Pressure</span>
+                </ion-item> -->
+                <!-- <ion-item menu-toggle="left" href="#/app/stepsSummaryList">
+					<span><img class="menuIcon" src="img/icons/icon-fitns-healthtips.svg" /></span>
+                    <span style="padding-left: 0.5em;">Steps</span>
+                </ion-item> -->
+                <ion-item menu-toggle="left" ng-click="logout()" style="color: #959595 !important;">
+					<span><img class="menuIcon" src="img/icons/icon_logOut.svg" /></span>
+                    <span style="padding-left: 0.5em;">Logout</span>
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

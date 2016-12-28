@@ -1,0 +1,49 @@
+<ion-view view-title="News Feed" class="health-tips-list-ion" id="health-tips-list-ion-id">
+  <ion-content>
+<!-- <br/><br/><br/> -->
+
+<div class="list" ng-repeat="news in feeds" ng-click="viewNewsDetails(news.newsID, news.MessageBody, news.newsFeedDate, news.Headline)">
+            <a class="item item-avatar" href="">
+                
+				<img class="listIcon" src="img/newsFeed.jpg">
+				<div class = "row">
+				   
+				   <div class = "col col-75"><p class="newsHead">{{ news.Headline }}</p></div>
+				   <div class = "col col-25"> <p class="newsDate">{{ news.newsFeedDate | date:' MMM d, y'}}</p>
+               </div>
+				</div>
+				
+				<div class = "row">
+				 <p class="newsContent">{{ news.MessageBody }}</p>
+				</div>
+  
+            </a>
+        </div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+					<p class="footerText">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed_selected.svg" />
+					<p class="footerText footerText1">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,88 @@
+<ion-view name="login-view" view-title="Fitness Summary" cache-view="false"  id="fitness">
+<ion-content>
+<!-- <ion-refresher pulling-text="Pull to refresh" on-refresh="doRefresh()"></ion-refresher> --> 
+	<div class="chartarea">
+			 
+			<div class="total-fit-count"><span><img src="img/icons/icon_points-table.svg"/></span><span class="fit-pts">Points Earned</span><span class="fit-gained"> ({{pointsEarned}})</span></div>
+			 <fusioncharts 
+				width="100%" 
+				height="200"
+				type="column2d"
+				datasource="{{myDataSource}}" showBorder="0"
+			></fusioncharts>		   
+	</div>	
+	<div class="list" ng-if="points">
+		<a class="item item-avatar" href="#/app/stepsSummaryList">
+		  <img src="img/icons/icon_steps.svg">
+			<div class="cardheadings"><p>{{points[1].ActivityName}}</p></div>
+			<div class="carddetails">
+				<!-- <span class="steps">10482</span><br/>
+				<span class="carddetailtext">your goal is 15,000</span> -->		
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" href="#/app/HeartRateSummaryList">
+		  <img src="img/icons/icon-HeartRate.svg">
+			<div class="cardheadings"><p>{{points[4].ActivityName}}</p></div>
+			<div class="carddetails">
+				<!-- <span class="heartrate">82bpm</span><br/>
+				<span class="carddetailtext">your avg is 15bpm</span>	 -->	
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" href="#/app/caloriesBurnedSummaryList">
+		  <img src="img/icons/icon-Caloriesburned.svg">
+			<div class="cardheadings"><p>{{points[3].ActivityName}}</p></div>
+			<div class="carddetails">
+				<!-- <span class="calariosburned">1,323</span><br/>
+				<span class="carddetailtext">your avg is 2,000</span> -->		
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" href="#/app/hoursSleptSummaryList">
+		  <img src="img/icons/icon_sleep.svg">
+			<div class="cardheadings"><p>{{points[0].ActivityName}}</p></div>
+			<div class="carddetails">
+				<!-- <span class="hourslept">7Hrs 20Min</span><br/>
+				<span class="carddetailtext">your avg is 6Hrs</span>	 -->	
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" href="#/app/waterLogSummaryList">
+		  <img src="img/icons/icon_hydration.svg">
+			<div class="cardheadings"><p>{{points[2].ActivityName}}</p></div>
+			<div class="carddetails">
+				<!-- <span class="hydration">6.5L</span><br/>
+				<span class="carddetailtext">your goal is 7L</span>	 -->	
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" href="#/app/bloodPressureDetails">
+		  <img src="img/icons/icon_bp.svg">
+			<div class="cardheadings"><p>Blood Pressure</p></div>
+			<div class="carddetails">
+				<!-- <span class="bp">108/65</span><br/>
+				<span class="carddetailtext">your avg is 120/80</span>	 -->	
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" href="#/app/bmiMeasurements">
+		  <img src="img/icons/icon_bmi.svg">
+			<div class="cardheadings"><p>BMI Measurement</p></div>
+			<div class="carddetails">
+				<!-- <span class="bmi">21.5</span><br/>
+				<span class="carddetailtext">your goal is 15,000</span>		 -->
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+	</div>
+	
+	
+</ion-content>
+</ion-view>

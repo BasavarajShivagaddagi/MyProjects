@@ -1,0 +1,92 @@
+<ion-view view-title="" cache-view="false" id="myProfile">
+
+    <ion-content class="headerall">
+
+        <div class="homeText userImg">
+            <img class="img-circular" src="img/user.jpg" />
+            <div>
+                <p class="userNameInner" ng-model="user">{{user}}</p>
+            </div>
+
+        </div>
+        <div class="list">
+
+            <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-call.svg" />
+			   <span class="input-label">Phone Number : <span style="color:#808080;">{{profile.mobile_no}}</span></span>
+		   </label>
+
+            <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-email.svg" />
+			   <span class="input-label">Email : <span style="color:#808080;">{{profile.username}}</span></span>
+		   </label>
+
+            <label class="item item-input" ng-click="gotoMyPolicy()">
+			   <img class="profileIcon" src="img/icons/icon-NoOfPolicies.svg" />
+			   <span class="input-label">No of policies : 
+				   <span style="color:#808080;">{{profile.numberOfPolicies}}</span>
+			   </span>
+			  <!--  <span ng-repeat="details1 in profile1">
+					<span ng-class="getCornersCol(details1.Policy_Status)">{{details1.Count}}</span>
+				</span> -->
+				<span>
+					<i class="icon ion-chevron-right profileIcon1"></i>
+				</span>
+		   </label>
+
+            <!-- <label class="item item-input" ng-click="gotoPointsStatement()">
+			   <img class="profileIcon" src="img/icons/icon-gainedpoints.svg" />
+			   <span class="input-label">Gained Points : <span style="color:#808080;">14,300</span></span>
+			   <i class="icon ion-chevron-right profileIcon2"></i>
+		   </label> -->
+
+            <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-dob.svg" />
+			   <span class="input-label">Date of birth : <span style="color:#808080;">14 October 1965</span></span>
+		   </label>
+
+            <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-address.svg" />
+			   <span class="input-label">Address : <span style="color:#808080;">{{profile.address}}</span></span>
+		   </label>
+
+            <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-country.svg" />
+			   <span class="input-label">Country : <span style="color:#808080;">{{profile.country}}</span></span>
+		   </label>
+
+            <label class="item item-input">
+			   <img class="profileIcon" src="img/icons/icon-zipcode.svg" />
+			   <span class="input-label">Zip code : <span style="color:#808080;">{{profile.zipcode}}</span></span>
+		   </label>
+
+        </div>
+
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-assertive">
+        <div class="row" style="text-align: center;">
+            <a class="col footerBorder" href="#/app/myPolicies">
+                <img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+                <p class="footerText">MY POLICIES</p>
+            </a>
+            <a class="col footerBorder" href="#/app/myFitDevice">
+                <img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+                <p class="footerText">FITNESS DEVICES</p>
+            </a>
+            <!-- <a class="col footerBorder" href="#/app/healthfitness">
+                <img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+                <p class="footerText">HEALTH OVERVIEW</p>
+            </a> -->
+
+            <a class="col footerBorder" href="#/app/newsFeed">
+                <img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+                <p class="footerText">NEWS FEED</p>
+            </a>
+
+            <a class="col" href="#/app/myProfile">
+                <img class="footerImg" src="img/icons/icon-footer-profile_selected.svg" />
+                <p class="footerText footerText1">MY PROFILE</p>
+            </a>
+        </div>
+    </ion-footer-bar>
+</ion-view>

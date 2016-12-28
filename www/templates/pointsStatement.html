@@ -1,0 +1,97 @@
+<ion-view view-title="Points Statement" id="pointsStatement">
+  <ion-content>
+	<ion-slides options="options" slider="data.slider" active-slide="myActiveSlide">
+		<ion-slide-page   ng-repeat="date in dates"  >
+			<div class="display-dates"  ng-class="{'highlightDay': $index == activeDay}">
+				{{date.day}}<br/>
+				<span style="font-size:24px;">{{date.date}}</span><br/>
+					{{date.month}}<br/>
+			</div>
+		</ion-slide-page>
+		<!-- <ion-slide-page>2</ion-slide-page>
+		<ion-slide-page>3</ion-slide-page>
+		<ion-slide-page>4</ion-slide-page> 
+		<ion-slide-page>5</ion-slide-page> -->
+	</ion-slides>
+  
+  
+  <!--<div style="margin-left: 5px;">
+  <div ng-repeat="date in dates" class="display-dates">
+  	{{date.day}}<br/>
+	<span style="font-size:24px;">{{date.date}}</span><br/>
+		{{date.month}}<br/>
+  </div>
+   </div> -->
+  <div class="st-row" style="float:left;">
+  	<div class="st-col">
+  		<p class="glyphicon glyphicon-calendar gly" style="font-size:14px;"></p>
+  		<p>	Points search<br><span style="font-size:12px;">BY DATE</span></p>
+  	</div>
+  	<div class="st-col">
+  		<span class="glyphicon glyphicon-download-alt gly" style="font-size:14px;"></span>
+  		<p>	Download<br><span style="font-size:12px;">STATEMENT</span></p>
+  	</div>
+  	<div class="st-col">
+  		<span class="glyphicon glyphicon-envelope gly" style="font-size:14px;"></span>
+  		<p>Mail your <br><span style="font-size:12px;">STATEMENT</span></p>
+  	</div>
+  </div>
+ <div class="list" style="padding: 1em;">
+ 	<div ng-if="pointsSummary.Calories[0].Value">
+		<a class="item item-avatar" href="#/app/stepsSummaryList">
+		  <img src="img/icons/icon_points-calbrnd2.svg">
+			<div class="cardheadings"><p id="card-headings-pt">{{pointsSummary.Calories[0].ActivityName}}</p><p>{{pointsSummary.Calories[0].Value}} points</p></div>					
+		
+		</a>
+	</div>
+	 	<div ng-if="pointsSummary.Sleep[0].Value">
+		<a class="item item-avatar" href="#/app/stepsSummaryList" ng-class="{myClass:$first}">
+		  <img src="img/icons/icon_sleep.svg">
+			<div class="cardheadings"><p id="card-headings-pt">{{pointsSummary.Sleep[0].ActivityName}}</p><p>{{pointsSummary.Sleep[0].Value}} points</p></div>	
+
+		</a>
+	</div>
+	 	<div ng-if="pointsSummary.Steps[0].Value"> 
+		<a class="item item-avatar" href="#/app/stepsSummaryList" ng-class="{myClass:$first}">
+		  <img src="img/icons/icon_steps.svg">
+			<div class="cardheadings"><p id="card-headings-pt">{{pointsSummary.Steps[0].ActivityName}}</p><p>{{pointsSummary.Steps[0].Value}} points</p></div>	
+
+		</a>
+	</div>
+	 	<div ng-if="pointsSummary.Water[0].Value">
+		<a class="item item-avatar" href="#/app/stepsSummaryList" ng-class="{myClass:$first}">
+		  <img src="img/icons/icon_hydration.svg">
+			<div class="cardheadings"><p id="card-headings-pt">{{pointsSummary.Water[0].ActivityName}}</p><p>{{pointsSummary.Water[0].Value}} points</p></div>	
+
+		</a>
+	</div>
+	 
+</div>
+ </ion-content>
+<ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview_selected.svg" />
+					<p class="footerText footerText1">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,3016 @@
+/* Empty. Add your own CSS if you like */
+
+/* health tips list starts*/
+#health-tips-list-ion-id .health-tips-list-date{
+	float: right;
+	color: #0079c2 !important;
+    font-size: 11px;
+}
+#health-tips-list-ion-id .health-tips-list,#health-tips-list-ion-id .health-tips-list .item-content,#health-tips-list-ion-id .item-avatar-left, .item-avatar-left .item-content {
+    padding-left: 100px !important;
+    min-height: 100px;
+}
+#health-tips-list-ion-id .health-tips-list > img:first-child,#health-tips-list-ion-id .health-tips-list .item-image,#health-tips-list-ion-id .health-tips-list .item-content > img:first-child,#health-tips-list-ion-id .health-tips-list .item-content .item-image,#health-tips-list-ion-id .item-avatar-left > img:first-child, .item-avatar-left .item-image,#health-tips-list-ion-id .item-avatar-left .item-content > img:first-child,#health-tips-list-ion-id .item-avatar-left .item-content .item-image 
+{
+	width: 70px !important;
+    height: 70px !important;
+    max-height: 90px !important;
+    max-width: 90px !important;
+}
+ #health-tips-list-ion-id .health-tips-list-heading{
+	font-size: 14px !important;
+	padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    white-space: normal !important;
+    color: #4b4b4b;
+}
+#health-tips-list-ion-id .health-tips-list-content{
+	font-size: 12px !important;
+	 white-space: normal !important;
+}
+#health-tips-list-ion-id{
+	/* top:-9% !important; */
+}
+
+/* health tips list ends*/
+
+/* health tips starts*/
+#healthTips .health-tips-img{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+#healthTips .health-tips-main-div,#healthTips .health-tips-main-div p,#healthTips .health-tips-main-div ul{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 14px;
+}
+#healthTips .health-tips-main-div ul li{
+	color:orange;
+	margin-left: 32px;
+
+}
+#healthTips .health-tips-main-div h3{
+	color:#4b4b4b;
+
+}
+#healthTips .health-tips-main-div ul li span,#healthTips .health-tips-main-div p {
+	color: #7E7E7E;
+	text-align: justify;
+}
+#healthTips ul.short-desc-list{
+	list-style-type: disc !important;
+}
+
+
+/* health tips ends*/
+/* alerts starts */
+#alerts .alerts-button{
+	padding: 20px 50px 20px 50px;
+
+}
+#alerts .alerts-cls{
+	background: #0079c2;
+}
+#alerts .alerts-cls .button.button-positive{
+	border-color: #fff !important;
+}
+#alerts .alerts-list div{
+	margin: 5px;
+	border-radius: 3px;
+}
+#alerts .alerts-list div p{
+	white-space: normal;
+}
+.bar.bar-stable .title {
+    color: #fff !important;
+}
+/* alerts ends */
+.homeText{
+	text-align:center;
+}
+.userName {
+	color:#0079c2 !important;	
+	margin-top:5px;
+	margin-bottom:5px !important;
+	font-size: 22px;
+}
+.userName1 {
+	color:#ffffff !important;	
+	margin-top:5px;
+	margin-bottom:5px !important;
+	font-size: 22px;
+}
+.userPhone {
+	margin-top:5px;
+	margin-bottom:5px !important;
+	font-size: 14px;
+    color: #808080;
+}
+.userImg{	
+	padding:5px;
+}
+.img-circular{ 
+
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;	
+	border: 2px solid #fff;
+}
+
+.headerall{
+	 background:#0079c2 !important; 
+}
+.xp-flt-mdlfr-sltbtn {
+    background-image: linear-gradient(bottom, #f8f8f8 50%, #0079c2 50%);
+	background-image: -o-linear-gradient(bottom, #f8f8f8 50%, #0079c2 50%);
+	background-image: -moz-linear-gradient(bottom, #f8f8f8 50%, #0079c2 50%);
+	background-image: -webkit-linear-gradient(bottom, #f8f8f8 50%, #0079c2 50%);
+	background-image: -ms-linear-gradient(bottom, #f8f8f8 50%, #0079c2 50%);
+}
+
+#menuPage .popImg
+{
+    float: right;
+    margin-top: 12px;
+    margin-right: 3px;
+    font-size: 1.7em;
+    color: #fff;
+}
+.right-icon {
+    font-size: 15px !important;
+    color: #ccc;
+}
+.tabs-div {
+	width : 100%;
+	float:left;
+}
+
+.gained-points, .next-status, .current-status {
+	float:left;
+	width : 33.30%;
+	padding : 3px;
+    height: 57px;
+}
+.gained-points {
+	background : #3ACBAC;
+}
+.next-status {
+	background : #EECB77;
+	/* border : 1px solid #fff; */
+	border-left: 1px solid #fff;
+}
+.current-status {
+	background : #F12677;
+	/* border : 1px solid #fff; */
+	border-left: 1px solid #fff;
+}
+.health-overview .list-inset {
+	margin : 0px !important;
+}
+.gained-points p, .next-status p, .current-status p {
+	font-size : 10px;
+	color : #fff;
+	margin : 0px;
+	padding : 0px;
+}
+.gained-points h3, .next-status h3, .current-status h3{
+	color : #fff;
+	margin : 0px;
+	padding : 0px;
+	font-weight: normal;
+}
+.health-details .item-icon-left {
+    padding-left: 15px;
+}
+.icon-green {
+    color: #AEDC22;
+}
+.icon-red {
+	color : red;
+}
+.drwan-background {
+    background: #0079c2 !important
+}
+
+.bar-stable .button.button-clear {
+    color: #ffffff;
+}
+#fitbitHome .iconAlign
+{
+	margin-top: -1.5em;
+    margin-right: 1em;
+    float: right;
+	color: #808080;
+	font-size: 100%;
+}
+
+#fitbitHome .row {
+    padding: 0px;
+}
+
+#fitbitHome .homeNav
+{
+	text-align: center;
+}
+
+#fitbitHome .homeNavText
+{
+	font-size: 14px;
+	text-align: center;
+}
+
+#fitbitHome .homeNavMargin
+{
+    margin-top: -1em;
+}
+
+#fitbitHome .list {
+    margin-bottom: -1px;
+}
+
+#fitbitHome .navBlock1
+{
+	background: #3acbac;
+	color:#fff;
+	border-right: 2px solid #f8f8f8;
+}
+
+#fitbitHome .navBlock2
+{
+	background: #efb11b;
+	color:#fff;
+	border-right: 2px solid #f8f8f8;
+}
+
+#fitbitHome .navBlock3
+{
+	background: #fd5274;
+	color:#fff;
+}
+
+#fitbitHome .item {
+    background: #ffffff;
+}
+
+#fitbitHome .newsText
+{
+	color: #0079c2;
+    background: #f8f8f8;
+    font-size: 14px;
+    padding-left: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+	font-weight: 500;
+}
+
+#fitbitHome .col {
+    padding: 0px;
+}
+
+#fitbitHome .newsHead
+{
+	font-size: 14px;
+    color: #4b4b4b;
+    font-size: 14px;
+    color: #4b4b4b;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 33px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+	font-weight: 500;
+}
+
+#fitbitHome .newsContent
+{
+	font-size: 12px;
+    color: #959595;
+    display: -webkit-box;
+    line-height: 12px;
+    max-height: 36px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-top: 0.8em;
+    white-space: pre-line;
+}
+
+#fitbitHome .newsDate
+{
+	font-size: 10px;
+    color: #0079c2;
+	float: right;
+}
+
+#fitbitHome .navIcons1
+{
+	height: 4em;
+	 margin-top: 1.5em;
+    margin-bottom: -0.5em;
+}
+
+#fitbitHome .navIcons2
+{
+	height: 4em;
+	 margin-top: 1.5em;
+    margin-bottom: -0.5em;
+}
+
+#fitbitHome .navIcons3
+{
+	height: 4em;
+	 margin-top: 1.5em;
+    margin-bottom: -0.5em;
+
+}
+#loginpage .button.button-positive, #signup .button.button-positive{
+    background-color: #efb11b !important;
+    border-radius: 25px !important;
+    margin-top: 10px;
+	width: 90%;
+    margin: 0 auto;
+	border: 1px solid #ffe400;
+}
+#loginpage .logincontent{
+	height: 100%;
+    background-size: 100% 100%;
+    width: 100%;
+	/* padding: 1.5em; */
+}
+#loginpage .formcontent{
+	margin-top:80%;
+}
+#loginpage input,#signup input {    
+    color: #ffffff !important;
+}
+#loginpage input[placeholder] ,#signup input[placeholder]{    
+    text-align:center;
+}
+#loginpage .forgotpass {
+    text-align: right;
+    padding: 10px;
+    color: #efb11b;
+    /* text-decoration: underline; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#loginpage .item , #signup .item{ 
+    background-color: transparent;
+    border-right: 0px;
+    border-left: 0px;
+    line-height: 35px;
+}
+#loginpage label , #signup label{
+    border-bottom: 1px solid #43a7d9 !important;
+}
+#loginpage .accountmsg ,#signup  .accountmsg{
+   /* margin-top: 30%; */
+       margin-top: 10%;
+   text-align:center;
+   color: #ffffff;
+}
+#loginpage .createaccount, #signup .createaccount {
+	text-align:center;	
+	color:#efb11b;
+}
+#signup .signincontent{
+	background:url('../img/bg-login2.png');
+	height: 100%;
+    background-size: 100% 100%;
+    width: 100%;
+} 
+#loginpage .scroll, #signup  .scroll{
+	overflow:hidden;
+}
+#signup  .formcontent{
+	/* top: 25%; */
+	    padding-top: 2em;
+    height: 100%;
+   /*  position: absolute; */
+    width: 100%;
+}
+#signup .signupbutton{
+	margin-top:15%;
+}
+#signup .headigncontent{
+	padding-top:20%;
+	text-align: center;	
+}
+#signup .headigncontent h3{
+	color:white !important;
+	    font-weight: 400;
+}
+.point-details-changes .desc-left {
+	padding-left : 0px !important;
+	width : 65%;
+	float : left;
+}
+
+#menuPage .bar.bar-assertive.bar-footer {
+    background-image: linear-gradient(180deg, #ebebeb, #ebebeb 50%, transparent 50%);
+}
+#menuPage .bar.bar-assertive {
+    border-color: #ebebeb;
+    background-color: #f8f8f8;
+    color: #959595;
+}
+
+#menuPage .row {
+    padding: 0px;
+}
+#menuPage .row {
+    margin-right: -15px;
+    margin-left: 0px;
+}
+#earnMorePointsId .earn-more-points-items{
+	border-left: none;
+	border-right: none;
+}
+#earnMorePointsId div.list{
+	margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#menuPage .bar-footer {
+    height: 57px;
+}
+
+#menuPage .footerBorder
+{
+	border-right: 2px solid #ebebeb;
+}
+#menuPage .footerImg
+{
+	height: 1.4em;
+	margin-top: -1em;
+}
+#menuPage .footerText
+{
+	font-size: 9px;
+	line-height: 1;
+}
+
+#menuPage .footerText1
+{
+	color : #2d9e86;
+}
+
+#myProfile .list {
+    margin-right: -1px;
+}
+
+#myProfile .profileIcon
+{
+	height: 1.2em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
+
+#myProfile .input-label {
+    line-height: 2
+}
+
+#myProfile .rcorners1 {
+    background: #6bb807;
+	border-radius: 15px;
+    padding-right: 11px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#myProfile .rcorners2 {
+    background: #efb11b;
+	border-radius: 15px;
+    padding-right: 11px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#myProfile .rcorners3 {
+    background: #f42323;
+	border-radius: 15px;
+    padding-right: 11px;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#myProfile .list {
+    padding-top: 15px;
+}
+
+#menuPage  a 
+{
+    color: #959595 !important;
+    text-decoration: none !important;
+}
+
+.point-details-changes .item-icon-right {
+	width : 35%;
+	float : left;
+	padding-right : 0px !important;
+	text-align : right;
+	font-size : 12px;
+}
+.points-font {
+	color : #AEDC22;
+	
+}
+.individual-display {
+    float: left;
+    width: 50%;
+    padding-left: 55px;
+    font-size: 11px;
+}
+.chart-back-draun {
+	background: #0079c2;
+}
+.below-display {
+    padding-top: 10px;
+    background: #0079c2;
+    width: 100%;
+    float: left;
+    color: #fff;
+	padding-bottom : 10px;
+}
+.total-saved {
+    background: #00C252;
+    text-align: center;
+    float: left;
+    width: 100%;
+    padding: 4px 0 4px 0;
+    color: #fff;
+	margin-bottom: 15px;
+}
+.savings-list .list {
+	padding-top : 0px !important;
+}
+
+#myPolicies .item-avatar, .item-avatar .item-content, .item-avatar-left, .item-avatar-left .item-content {
+    padding-left: 15px;
+    min-height: 72px;
+}
+
+#myPolicies .list {
+    padding-top: 15px;
+}
+
+#myPolicies .list {
+    margin-bottom: -15px;
+}
+
+#myPolicies .userImg{	
+	padding:5px;
+}
+
+#fitbitHome .listIcon {
+    top: 21px;
+    left: 12px;
+    max-width: 50px;
+    max-height: 50px;
+
+}
+
+#menuPage .headerImg
+{
+    padding-top: 0.1em;
+   /*  padding-right: 0.8em; */
+    color: #fff;
+    font-size: 2em;
+}
+
+#menuPage .headerImg1
+{
+    padding-top: 0.1em;
+    padding-right: 0.3em;
+    color: #fff;
+    font-size: 2em;
+	padding-left: 1em;
+}
+
+#myPolicies .iconAlign
+{
+	/* margin-top: 2em;
+    float: right;
+    margin-left: 0em;
+    color: #808080;
+    font-size: 100%; */
+	color: #808080;
+    font-size: 100%;
+    right: 17px;
+    position: absolute;
+    top: 35px;
+}
+
+#newsFeedDetails .newsHead
+{
+    font-size: 18px;
+    color: #4b4b4b;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+#newsFeedDetails .newsDate
+{
+	font-size: 11px;
+    color: #0079c2;
+}
+
+#newsFeedDetails .newsContent
+{
+	font-size: 14px;
+    color: #959595;
+}
+
+#newsFeedDetails .item {
+    border-color: transparent;
+}
+.chart, #saved-premium{
+  height:220px;
+}
+.chart {
+	background : #0079C2;
+}
+.small-div {
+    height: 8px;
+    width: 8px;
+    float: left !important;
+	margin-top: 5px;
+	margin-right : 3px;
+}
+
+
+.checked-active{
+
+  background: #f2f2f2;
+  border-radius: 50%;
+  padding: 6px;
+  color:#B1B1B1;
+  margin: 10px;
+  width: 28px;
+  height: 28px;
+  float: left;
+
+}
+.checked-active span{
+
+font-size: 15px;
+    float: left; 
+}
+.checked-active-add{
+
+    background: url(../img/icons/icon-summary-activedays.svg) no-repeat !important;
+    width: 28px;
+    height: 28px;
+    float: left;
+     margin: 10px;
+}
+
+
+.checked-active-add  input[type="checkbox"]{
+    display: none;
+}
+
+.checked-active-add  span{
+    display: none;
+}
+
+.cal-next-month{
+    width:33.33%;
+    background-color:#B1B1B1;
+    float:left;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding:5px;
+}
+
+.cal-prev-month{
+    width:33.33%;
+    background-color:#B1B1B1;
+    float:left;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding:5px;
+}
+.cal-cur-month-div{
+    width:33.33%;
+    background-color:#B1B1B1;
+    float:left;
+}
+.cal-cur-month{
+    background-color:#4b4b4b;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+
+#myPoliciesDetails .list {
+    padding-top: 30px;
+}
+#myPoliciesDetails .list {
+    margin-right: -1px;
+}
+
+#myPoliciesDetails .input-label {
+    line-height: 2.5;
+}
+
+g.raphael-group-110-creditgroup, .raphael-group-94-creditgroup, .raphael-group-190-creditgroup, .raphael-group-79-creditgroup {
+    display: none !important;
+}
+
+.box{
+  height: 100%;
+}
+ion-slides{
+  height: 290px !important;
+}
+
+$base-color: #c24;
+$num-colors: 10;
+
+@for $i from 0 to $num-colors {
+    .bgColor_#{$i} {
+      background-color: adjust-hue($base-color, 360deg / $num-colors * $i);
+    }
+}
+
+.nav-points {
+	float : left;
+	width : 100%;
+	text-align : center;
+	margin : 0 auto;
+}
+.active-point {
+	height : 10px;
+	border-radius : 50%;
+	width : 10px;
+	float : left;
+	position : relative;
+	left : 49%;
+	
+}
+.inactive-point {
+	height : 10px;
+	border-radius : 50%;
+	width : 10px;
+	float : left;
+	position : relative;
+	left : 51%;
+}
+.activate {
+	background : red;
+}
+.no-activate {
+	background : grey;
+}
+
+
+
+.steps-tab-img{
+    height: 20px;
+}
+.steps-tab-main-div{
+    width:68%;
+    margin-left:28%;
+    margin-top: -13%;   
+}
+
+.steps-tab-first-div{
+    width:17%;float:left;background-color:#eee;text-align:center;border-top-left-radius:50px;border-bottom-left-radius:50px;padding:10px;
+}
+.steps-tab-sec-div{
+    width:17%;float:left;background-color:#eee;text-align:center;padding:10px;
+}
+.steps-tab-th-div{
+    width:17%;float:left;background-color:#eee;text-align:center;padding:10px;
+}
+.steps-tab-fou-div{
+    width:17%;float:left;background-color:#eee;text-align:center;border-top-right-radius:50px;border-bottom-right-radius:50px;padding:10px;
+}
+.cal-steps{
+    color:#fff;position: absolute;left: 42%;font-size:20px;
+}
+#healthTips .cal-steps{
+    top: 28%;
+}
+#stepsSummaryList .cal-steps{
+    margin-top: -23%;
+   left: 43%;
+}
+
+#stepsSummaryList table{
+   
+    margin-left: 10px;
+}
+
+#stepsSummaryList .points-col{
+    text-align: center;
+    width: 10%;
+}
+#stepsSummaryList table tr th{
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+#stepsSummaryList .table-bordered>tbody>tr>td{
+    border: none;
+}
+
+#stepsSummaryList table tr th {
+    color: red;
+    font-size: 18px;
+}
+
+#stepsSummaryList #outer-circle {
+   background: gray;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    padding: 5px;
+    box-shadow: 0 0 30px red;
+ 
+ }
+ #stepsSummaryList #inner-circle {
+   position: absolute;
+   background: red;
+   border-radius: 50%;
+   height: 5px;
+   width: 5px;
+   padding: 5px;
+   box-shadow: 0 0 30px red;
+  
+ } 
+#fitness .chartarea{
+	background: #0079c2;
+    height: 39%;
+    width: 100%;
+}
+#fitness .list:last-child.card{
+	margin-bottom:20px;
+}
+#fitness .card{	
+	box-shadow: none;
+	margin: 10px 10px;
+}
+#fitness .item-icon-left{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+#fitness .item-icon-left .icon{
+	left:0px;
+}
+#fitness .cardheadings{
+	/* width: 50px; */
+	position: absolute;
+	margin-top: 10px;
+}
+#fitness .cardheadings p{
+	font-size: 16px;font-weight: 500;
+    color: #636363;
+}
+#fitness .carddetails{
+	float: right;
+	text-align: right;
+	padding-right: 18px;
+}
+#fitness .steps{
+	font-size: 16px;
+	font-weight: 500;
+	color: #3acbac;
+}
+#fitness .heartrate{
+	font-size: 16px;
+	font-weight: 500;
+	color: #ef3c24;;
+}
+#fitness .calariosburned{
+	font-size: 16px;
+	font-weight: 500;
+	color: #faa719;
+}
+#fitness .hourslept{
+	font-size: 16px;
+	font-weight: 500;
+	color: #61c8d6;
+}
+#fitness .hydration{
+	font-size: 16px;
+	font-weight: 500;
+	color: #7da8d9;
+}
+#fitness .bp{
+	font-size: 16px;
+	font-weight: 500;
+	color: #ee2c3e;
+}
+#fitness .bmi{
+	font-size: 16px;
+	font-weight: 500;
+	color: #66b845;
+}
+#fitness .carddetailtext{
+	font-size: 12px;
+}
+#fitness .cardiconpos{
+	width: 10px;
+	position: absolute;
+	left: 95%;
+	line-height:-3px;
+	margin-top:10px;
+}
+.lower-status {
+	width : 100%;
+	float:left;
+}
+.outer-main, .outer-second, .outer-third, .outer-fourth {
+	width : 25%;
+	padding-left : 1px;
+	padding-right : 1px;
+	float : left;
+	height: 43px;
+    background-position: center;
+}
+.inner-status {
+	float : left;
+	width : 100%;
+	background : #FFAC1E;
+	height : 6px;
+	position: relative;
+    top: 36px;
+}
+.inner-second {
+	float : left;
+	width : 100%;
+	background : #93ED7C;
+	height : 6px;
+	position: relative;
+    top: 36px;
+}
+.inner-third {
+	float : left;
+	width : 100%;
+	background : #F92E88;
+	height : 6px;
+	position: relative;
+    top: 36px;
+}
+.inner-fourth {
+	float : left;
+	width : 100%;
+	background-color : #00BAFF;
+	height : 6px;
+	position: relative;
+    top: 36px;
+}
+.active-status {
+	background-image : url('../img/icon-currentstatus.svg');
+	background-repeat : no-repeat;
+	
+}
+
+#stepsSummaryList div#area-example text[text-anchor='end']
+{
+    display: none;
+}
+#stepsSummaryList .morris-hover.morris-default-style{
+    display: none !important;
+}
+
+#stepsSummaryList div#area-example path[fill='none']
+{
+    stroke: rgb(122,0,100) !important;
+}
+#stepsSummaryList div#area-example circle[stroke='#ffffff']
+{
+    fill: rgb(122,0,100) !important;
+    stroke-width:-25px !important;
+}
+/*#stepsSummaryList div#myfirstchart path[fill='none']
+{
+    stroke: red !important;
+}
+*/
+#stepsSummaryList .steps-on-graph{
+    background: #3acbac;
+    width: 16%;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    margin-top: -8px;
+    color: #fff;
+    margin-right: 10%;
+    float: right;
+  
+}
+#stepsSummaryList .steps-on-graph-line
+{
+    height:2px;
+    background-color:#3acbac;
+    width:100%;
+    margin-top: 20%;
+    position:absolute;
+    z-index: 1;
+}
+
+#healthTips .send-mail{
+    width: 49%;
+    background: #0079C2;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 11px;
+    padding-bottom: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #fff;
+
+}
+#healthTips .send-env{
+    background: #FFF;
+    padding-right: 4PX;
+    border-radius: 50%;
+    float: left;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-left: 8px;
+    margin-top: -2px;
+    color: black !important;
+}
+#stepsSummaryList .send-mail{
+    width: 107%;
+    background: #0079C2;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 11px;
+    padding-bottom: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #fff;
+
+}
+#stepsSummaryList .send-env{
+         background: #FFF;
+    padding-right: 6px;
+    border-radius: 50%;
+    float: left;
+    padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    /* margin-left: 8px; */
+    margin-top: -2px;
+    color: black !important;
+}
+
+#fitness .item{
+	border-color:#ece9e9;
+}
+
+#myProfile .profileIcon1
+{
+	/* margin-top: 0em;
+    float: right;
+    margin-left: 4.6em;
+    color: #808080;
+    font-size: 100%; */
+	    /* margin-top: 0em; */
+    /* float: right; */
+    /* margin-left: 4.6em; */
+    color: #808080;
+    font-size: 100%;
+    right: 23px;
+    position: absolute;
+    top: 17px;
+}
+
+#myProfile .profileIcon2
+{
+	/* margin-top: 0em;
+    float: right;
+    margin-left: 8em;
+    color: #808080;
+    font-size: 100%; */
+	color: #808080;
+    font-size: 100%;
+    right: 23px;
+    position: absolute;
+    top: 17px;
+
+}
+.chartarea image {
+    height: 20px !important;
+    width: 20px !important;
+}
+.chartarea .raphael-group-3-canvas rect {
+    stroke-width: 0 !important;
+}
+.chartarea .raphael-group-81-annotations {
+	border-top : 1px solid #0DEBEE;
+}
+.invalidMessageLogin
+{
+	color: #efb11b;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+.placeholder-icon {
+    color: #ffffff;
+}
+*::-webkit-input-placeholder {
+  color: white !important;
+}
+*:-moz-placeholder {
+  color: white !important;
+}
+*:-ms-input-placeholder { /* IE10+ */
+  color: white !important;
+}
+.flow-chart {
+float : left;
+}
+.blood-pressure .steps-tab-main-div {
+	float : left;
+	margin-top : -6%;
+}
+.left-blood {
+	float: left;
+    width: 35%;
+    padding-left: 5px;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 22px;
+}
+.flow-chart {
+	float : left;
+	width : 65%;
+}
+.main-blod {
+	float: left;
+    width: 100%;
+    background: #0079C2;
+    padding-bottom: 0px;
+    min-height: 225px;
+}
+.left-blood  li{
+	line-height: 30px;
+    font-size: medium;
+}
+.first-li {
+	color : red;
+}
+.second-li {
+	color : orange;
+}
+.third-li {
+	color : green;
+}
+
+.bar .title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 43px;
+}
+
+#fitnessDevice .profileIcon
+{
+	/* height: 1.2em;
+    padding-right: 0.5em; */
+	height: 2em;
+    padding-right: 1em;
+}
+
+#fitnessDevice .newsText
+{
+	color: #0079c2;
+    background: #f8f8f8;
+    font-size: 14px;
+    padding-left: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+	font-weight: 500;
+}
+
+.test
+{
+	    height: 500px;
+    background: #fff;
+}
+
+#fitnessDevice .item-toggle, .item-toggle.item-complex .item-content {
+    padding-right: 120px;
+    padding-top: 0px;
+    padding-bottom: 54px;
+}
+
+#fitnessDevice .item {
+    /* border-color: transparent; */
+}
+/* .toggle input:checked + .track {
+    background-color: #3acbac;;
+    border-color: #3acbac;;
+} */
+
+#fitnessDevice .item-input {
+    padding: 0px 0 0px 16px;
+}
+
+#myHealthOverview .list {
+    padding-top: 0px;
+}
+
+#myPoliciesDetails .myPremiumSave
+{
+	height: 50px;
+    z-index: 3;
+    position: absolute;
+    right: 10px;
+}
+
+#myPoliciesDetails .myPremiumSave1 {
+    height: 50px;
+    z-index: 3;
+    position: absolute;
+    left: 10px;
+}
+.morris-hover.morris-default-style {
+	display : none !important;
+}
+#area-example path[fill='#a7b3bc'], #area-example path[fill='#2577b5']{
+    fill: none;
+}
+#area-example {
+	float : left;
+	background: url(../img/bg-graph.jpg);
+	background-size: 100%;
+}
+
+#menuPage .homeText{
+	text-align:center;
+}
+
+#menuPage .userImg{	
+	padding:5px;
+}
+
+#menuPage .userName1 {
+	color:#ffffff !important;	
+	margin-top:5px;
+	margin-bottom:5px !important;
+	font-size: 16px;
+}
+
+#menuPage .img-circular-panel{ 
+
+    /* width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;	
+	border: 2px solid #fff; */
+	width: 80px;
+    height: 80px;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+.flow-chart rect[fill='#FFFFFF'] {
+	fill : #0079c2;
+}
+.dropdown-box {
+	float: left;
+    width: 100%;
+    font-size: 19px;
+    margin-top: 1px;
+    background: #f2f2f2;
+    padding: 7px 3px;
+}
+.dropdown-box select {
+	color : #0079c2;
+}
+.date-header {
+	float : left;
+	width : 100%;
+}
+.date-header ul li {
+	float : left;
+	text-align : center;
+	font-size : 10px;
+}
+.send-mail {
+    border: 1px solid #0079c2;
+    background: #0079c2;
+    padding: 5px 10px;
+    border-radius: 17px;
+    color: #fff;
+}
+.glyphicon-envelope {
+	background: #fff;
+    color: #0079c2;
+    padding: 1px;
+    border-radius: 5px;
+    font-size: 12px;
+	padding : 2px;
+}
+.a1 {
+	width: 20em;
+    border: 1px solid #ccc;
+    background: #ff4545;
+    height: 255px;
+    border-radius: 0px 260px 0px 0px;
+    position: relative;
+    bottom: 0;
+}
+.a2 { 
+	    width: 16em;
+    border: 1px solid #ccc;
+    background: #fb8043;
+    height: 174px;
+    border-radius: 0px 224px 0px 0px;
+    position: relative;
+    top: 40px;
+	}
+.a3 {  
+	width: 13em;
+    border: 1px solid #ccc;
+    background: #539908;
+    height: 122px;
+    border-radius: 0px 196px 0px 0px;
+    position: relative;
+    bottom: 0;
+    top: 11px;
+}
+.a4 {
+    float: left;
+    width: 100%;
+	color:#fff;
+	padding-left: 6px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.a5 {  
+	width: 49%;
+    border: 1px solid #ccc;
+    background: #fabb60;
+    height: 51px;
+    border-radius: 0px 163px 0px 0px;
+    position: relative;
+    bottom: 0;
+    top: 30px;
+}
+
+#menuPage .menuIcon  
+{
+	height: 1.3em;
+    vertical-align: text-bottom;
+	/* padding-left: 1em; */
+}
+
+#menuPage .item {
+    font-size: 15px;
+}
+
+#myHealthOverview .cal-steps{
+    top:11%;
+}
+
+#bloodPressureThird .bar-footer {
+    height: 54px;
+}
+
+#bloodPressureThird .bar {
+    padding: 0px;
+}
+
+#bloodPressure .bar-footer {
+    height: 54px;
+}
+
+#bloodPressure .bar {
+    padding: 0px;
+}
+
+#bloodPressureSecond .bar-footer {
+    height: 54px;
+}
+
+#bloodPressureSecond .bar {
+    padding: 0px;
+}
+.bp-details {
+	float:left;
+	width : 100%;
+	margin-bottom : 20px;
+}
+.date-col {
+	width: 55%;
+	padding-left: 15px;
+}
+.points-col {
+	width : 25%;
+}
+.last-point {
+	width : 20%;
+}
+p.month-header {
+    font-size: 20px;
+    color: #F12677;
+	padding-left: 26px;
+	background-image : url('../img/icons/icon_listview_crcle.svg');
+	background-repeat: no-repeat;
+    margin-bottom: 0px; 
+}
+.details-table {
+	border-left : 1px solid #F12677;
+	margin-left : 10px;
+}
+.details-table tr:nth-child(odd) {
+    background: #f2f2f2;
+}
+.details-table tr {
+    color: grey;
+    font-size: 12px;
+}
+#bloodPressureDetails .bar-footer {
+    height: 54px;
+}
+
+#bloodPressureDetails .bar {
+    padding: 0px;
+}
+.bp-values {
+	width: 12%;
+    float: left;
+    text-align: right;
+    padding-top: 4px;
+    font-size: 10px;
+}
+.bp-graph {
+	width : 88%;
+	float : left;
+    position: relative;
+}
+.bp-values li {
+    line-height: 25px;
+}
+.vertical-values {
+	float: left;
+    width: 100%;
+    padding-left: 12%;
+    position: relative;
+    top: -8px;
+    font-size: 11px;
+}
+.vertical-values li {
+	float : left;
+	width: 45px;
+}
+.values-map {
+    float: left;
+    width: 100%;
+}
+
+.a5.active {
+    background-image: url(../img/icons/icon-bp_status.svg);
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position-x: 32px;
+    background-position-y: 10px;
+
+}
+.a3.active {
+    background-image: url(../img/icons/icon-bp_status.svg);
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position-x: 106px;
+    background-position-y: 25px;
+}
+.a2.active {
+    background-image: url(../img/icons/icon-bp_status.svg);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position-x: 117px;
+    background-position-y: 27px;
+}
+.a1.active {
+    background-image: url(../img/icons/icon-bp_status.svg);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position-x: 117px;
+    background-position-y: 27px;
+}
+
+/*.extra {border : 1px solid #ccc;;background : red; width: 200px;
+ 
+    background-color: none;
+    border-top-left-radius: 110px;  
+    border-top-right-radius: 110px; 
+    border: 10px solid gray;
+    border-bottom: 0;
+	float : left;
+	
+font-size: 0px; line-height: 0%; 
+
+border-right: 20px solid #f6f6f6;
+
+
+}
+.extra1 {
+	height: 80px;
+    background-color: none;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid gray;
+    border-bottom: 0;
+    float: left;
+    font-size: 0px;
+    line-height: 0%;
+    border-right: 10px solid #f6f6f6;
+    width: 149px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.extra2 {
+	height: 60px;
+    background-color: none;
+    border-top-left-radius: 110px;
+    border-top-right-radius: 110px;
+    border: 10px solid gray;
+    border-bottom: 0;
+    float: left;
+    font-size: 0px;
+    line-height: 0%;
+    border-right: 10px solid #f6f6f6;
+    width: 100px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+} */
+
+#myHealthOverview .doing-well-icon {
+    background: #fff;
+    border-radius: 50%;
+    padding-left: 3px;
+    padding-right: 4px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: -4%;
+}
+#myHealthOverview .doing-well-txt{
+    padding: 4px 5px 5px 5px;
+    color: #fff;
+}    
+#myHealthOverview .doing-well-div{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-top: -11%;
+    background-color: #AEDC22;
+    width: 29%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#myHealthOverview .glyphicon-ok:before {
+  
+    color: #AEDC22;
+    font-size: 13px;
+}
+
+#myHealthOverview .item {
+    background-color: transparent !important; 
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    padding: 16px;
+    border-width: 1px;
+    border-style: solid;
+    font-size: 16px;
+    margin-left: 24px;
+    width: 90%;
+    margin-left: 5% !important;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #eee !important;
+}
+#myHealthOverview path[fill='none'] {  
+   stroke:#AEDC22 !important;
+}
+#myHealthOverview circle[fill='none'] {  
+   stroke:#6666FF !important;
+}
+
+#pointsStatement .chartarea{
+    background: #0079c2;
+    height: 39%;
+    width: 100%;
+}
+#pointsStatement .list:last-child.card{
+    margin-bottom:20px;
+}
+#pointsStatement .card{ 
+    box-shadow: none;
+    margin: 10px 10px;
+}
+#pointsStatement .item-icon-left{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+#pointsStatement .item-icon-left .icon{
+    left:0px;
+}
+#pointsStatement .cardheadings{
+    /* width: 50px; */
+    position: absolute;
+   
+}
+#pointsStatement .cardheadings p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #636363;
+}
+#pointsStatement #card-headings-pt{
+     font-size: 16px;
+    font-weight: 500;
+    color: #959595;
+}
+#pointsStatement .carddetails{
+    float: right;
+    text-align: right;
+    padding-right: 18px;
+}
+#pointsStatement .steps{
+    font-size: 16px;
+    font-weight: 700;
+    color: #3acbac;
+}
+#pointsStatement .heartrate{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ef3c24;;
+}
+#pointsStatement .calariosburned{
+    font-size: 16px;
+    font-weight: 700;
+    color: #faa719;
+}
+#pointsStatement .hourslept{
+    font-size: 16px;
+    font-weight: 700;
+    color: #61c8d6;
+}
+#pointsStatement .hydration{
+    font-size: 16px;
+    font-weight: 700;
+    color: #7da8d9;
+}
+#fitness .bp{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ee2c3e;
+}
+#pointsStatement .bmi{
+    font-size: 16px;
+    font-weight: 700;
+    color: #66b845;
+}
+#pointsStatement .carddetailtext{
+    font-size: 12px;
+}
+#pointsStatement .cardiconpos{
+    width: 10px;
+    position: absolute;
+    left: 95%;
+    line-height:-3px;
+    margin-top:10px;
+}
+#pointsStatement .item {
+       background-color: transparent !important;
+    color: #444;
+   /*  margin-left: 24px;
+    width: 90%; */
+   
+    border-left: none;
+    border-right: none;
+  
+}
+
+div#area-example svg {
+    top:50px !important;
+}
+
+#stepsSummaryList div.round-progress-wrapper svg path[fill='none'] {  
+  stroke: #3acbac !important;
+}
+#stepsSummaryList circle[fill='none'] {  
+   stroke:#6666FF !important;
+}
+
+#stepsSummaryList .bar-footer{
+    height: 54px;
+}
+    
+.bim-details {
+	width : 100%;
+	float : left;
+	background: #0A77BC;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+	margin-top: 15px;
+}
+.lb-div {
+    width: 33.33%;
+    padding-left: 22px;
+	color: #fff;
+    font-size: 13px;
+}
+span.vert-line {
+    color: #00BAFF;
+    font-size: 24px;
+}
+span.vert-line-red {
+    color: red;
+	font-size: 24px;
+}
+span.vert-line-mussle {
+	color : #FF944C;
+	font-size: 24px;
+}
+.vertlines {
+    float: left;
+}
+.vertlines1 {
+    line-height: 14px;
+    padding-left: 10px;
+}
+.lb-details {
+	float : left;
+	width : 100%;
+	text-align : center;
+	margin-top: 10px;
+}
+#bmi-measurements .main-blod {
+	height : 220px;
+}
+.lb-details img {
+    height: 35px;
+}
+span.lb-value {
+    color: #FFB700;
+    font-size: 27px;
+    vertical-align: super;
+}
+span.reduced-color {
+    color: #fff;
+    vertical-align: super;
+}
+.lb-range {
+	float : left;
+	width : 100%;
+	margin-left: 8px;
+    margin-right: 8px;
+}
+.div-blue {
+	float : left;
+	width : 21%;
+	background : #0ABDD4;
+	height : 6px;
+}
+.div-green {
+	float : left;
+	width : 21%;
+	background : #07A324;
+	height : 6px;
+}
+.div-yellow {
+	float : left;
+	width : 21%;
+	background : #FF944C;
+	height : 6px;
+}
+.div-red {
+	float : left;
+	width : 20%;
+	background : #FC2E32;
+	height : 6px;
+}
+.number-dot {
+    float: left;
+    width: 15px;
+    font-size: 10px;
+    border: 1px solid #fff;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    top: -5px; 
+    text-align: center;
+}
+.lb-range span{
+	vertical-align: top !important;
+    display: block;
+    position: relative;
+    top: -3px;
+}
+.main-range {
+    width: 100%;
+    float: left;
+    color: #fff;
+    margin-top: 22px;
+    background: #0A77BC;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+.main-range p {
+	margin-bottom : 0px;
+}
+#health-tips-list-ion-id div.round-progress-wrapper svg path[fill='none'] {  
+  stroke: #3acbac !important;
+}
+#health-tips-list-ion-id .cal-steps {
+    color: #fff;
+    position: absolute;
+    left: 43%;
+    font-size: 20px;
+}
+#health-tips-list-ion-id .bar-footer {
+    height: 57px;
+}
+
+
+#health-tips-list-ion-id .row {
+    padding: 0px;
+}
+
+
+
+#health-tips-list-ion-id .list {
+    margin-bottom: -1px;
+}
+
+
+#health-tips-list-ion-id .item {
+    background: #ffffff;
+}
+
+#health-tips-list-ion-id .newsText
+{
+    color: #0079c2;
+    background: #f8f8f8;
+    font-size: 14px;
+    padding-left: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 500;
+}
+
+#health-tips-list-ion-id .col {
+    padding: 0px;
+}
+
+#health-tips-list-ion-id .newsHead
+{
+    font-size: 14px;
+    color: #4b4b4b;
+    font-size: 14px;
+    color: #4b4b4b;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 33px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-weight: 500;
+}
+
+#health-tips-list-ion-id .newsContent
+{
+    font-size: 12px;
+    color: #959595;
+    display: -webkit-box;
+    line-height: 12px;
+    max-height: 36px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-top: 0.8em;
+    white-space: pre-line;
+}
+
+#health-tips-list-ion-id .newsDate
+{
+    font-size: 10px;
+    color: #0079c2;
+    float: right;
+}
+
+
+#health-tips-list-ion-id .row {
+    padding: 0px;
+}
+
+
+
+#health-tips-list-ion-id .list {
+    margin-bottom: -1px;
+}
+
+
+#health-tips-list-ion-id .item {
+    background: #ffffff;
+}
+
+#health-tips-list-ion-id .newsText
+{
+    color: #0079c2;
+    background: #f8f8f8;
+    font-size: 14px;
+    padding-left: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 500;
+}
+
+#health-tips-list-ion-id .col {
+    padding: 0px;
+}
+
+#health-tips-list-ion-id .newsContent
+{
+    font-size: 12px;
+    color: #959595;
+    display: -webkit-box;
+    line-height: 15px;
+    max-height: 36px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-top: 0.5em;
+    white-space: pre-line;
+}
+
+#health-tips-list-ion-id .newsDate
+{
+    font-size: 10px;
+    color: #0079c2;
+    float: right;
+}
+
+#health-tips-list-ion-id .listIcon {
+    top: 20px;
+    left: 12px;
+    max-width: 50px;
+    max-height: 50px;
+}
+#pointsStatement .st-row{
+    width: 100%;
+    background: #f2f2f2;
+   
+       
+}
+#pointsStatement .st-col{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    color: #959595;
+    font-size: 10px;
+    line-height: 1.2;
+    padding: 10px;
+     
+}
+#pointsStatement .gly{
+  float:left;font-size:23px;
+  color: #959595 !important;
+  background: #f2f2f2;
+  
+
+        
+}
+#pointsStatement .display-dates{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #959595;
+    background: #f2f2f2;
+    border:1px solid #fff;
+	font-size: 12px;
+}
+#pointsStatement ion-slides {
+	height: 68px !important;
+}
+#healthTips ion-slides {
+    height: 30px !important;  
+    
+    text-align: CENTER;
+    background: #B1B1B1;
+    color: #fff;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.highlightMonth{
+       background-color: #4b4b4b;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#healthTips .swiper-slide{
+    padding-top: 4px !important
+}
+#healthTips .swiper-slide.swiper-slide-active.swiper-slide-duplicate.swiper-slide-next{
+     background: #B1B1B1;
+}
+#healthTips .bar-footer {
+    height: 54px;
+}
+.fitness-status-main {
+	float: left;
+    width: 100%;
+    margin-top: 20px;
+    height: 16px;
+}
+.fitness-status1, .fitness-status2,.fitness-status3, .fitness-status4, .fitness-status5 {
+	float : left;
+	background : #f1f1f1;
+	height : 7px;
+}
+.fitness-status1 {
+	width : 15%;
+}
+.fitness-status2 {
+	width : 17%;
+}
+.fitness-status3 {
+	width : 17%;
+}
+.fitness-status4 {
+	width : 17%;
+}
+.fitness-status5 {
+	width : 15%;
+}
+.fitness-status-dot {
+    height: 15px;
+    border: 1px solid #f1f1f1;
+    width: 15px;
+    float: left;
+    background: #ccc;
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.active-image {
+	float : left;
+	width : 100%;
+}
+.health-overview .item-icon-left img {
+	height: 20px;
+    width: 20px;
+    float: left;
+    margin-right: 10px;
+}
+.health-overview .item-icon-left {
+    padding-left: 3px;
+}
+.active-image {
+	background: url(../img/icons/icon-currentstatus.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    position: absolute;
+    top: 52px;
+	
+}
+#stepsSummaryList .steps-th{
+    float:right;
+    padding-right:6%;
+    color: #F12677;
+    font-size:20px;
+    margin-bottom:0px;
+}
+.fitness-status-main12 {
+    float: left;
+    width: 100%;
+    font-size: 11px;
+    color: grey;
+}
+
+.progress-bar-bg{
+    text-align:center;
+    margin-bottom:10px;
+    background:#0079c2;
+}
+.send-mail-main-div{
+    margin-left:41% !important;
+    margin-top:10px;
+    float:left;
+}
+#pointsStatement .myClass
+{
+	border-top:0px;
+}
+.total-fit-count {
+	float : left;
+	width : 100%;
+	text-align: center;
+}
+.total-fit-count img {
+    width: 44px;
+}
+
+.back-text{
+    display: none !important;
+}
+#healthTips div.round-progress-wrapper svg path[fill='none'] {  
+  stroke: #3acbac !important;
+}
+#healthTips circle[fill='none'] {  
+   stroke:#6666FF !important;
+}
+#healthTips .cal-steps {  
+   left:43% !important;
+}
+
+#healthTips .newsHead
+{
+    font-size: 18px;
+    color: #4b4b4b;
+    white-space: pre-line;
+    text-overflow: ellipsis;
+    font-weight: 500;
+}
+
+#healthTips .newsDate
+{
+	font-size: 11px;
+    color: #0079c2;
+}
+
+#healthTips .newsContent
+{
+	font-size: 14px;
+    color: #959595;
+}
+
+#healthTips .item {
+    border-color: transparent;
+}
+
+/* #fitnessDevice .input-label {
+    display: table;
+    padding: 7px 10px 7px 0px;
+    max-width: 45%;
+    width: 100%;
+    color: #444;
+    font-size: 16px;
+} */
+
+
+#stepsSummaryList .bar{
+    padding: 0px 5px 0px 0px;
+}
+#healthTips .bar{
+    padding: 0px 5px 0px 0px;
+}
+.lower-status1 {
+    float: left;
+    width: 100%;
+	font-size : 10px;
+	coloe : grey;
+	text-align : center;
+}
+.outer-main1, .outer-second1, .outer-third, .outer-fourth1 {
+    float: left;
+    width: 25%;
+    line-height: 13px;
+}
+.fitness-status12 {
+    float: left;
+	margin-left: 14%;
+}
+.pre-save text[font-weight='800'] tspan {
+    display: none;
+} 
+text[fill-opacity='0.5'] tspan {
+    display: none;
+}
+
+/****************/
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  margin-bottom: 0px !important;
+}
+.fancy span {
+  display: inline-block;
+    position: relative;
+    left: 29%;
+    border: 1px solid #fff;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #fff;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border-top: 1px solid #fff;
+  top: 7px;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 0px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 0px;
+}
+.tot-points {
+    margin-bottom: 0px !important;
+    position: relative;
+    top: 10px;
+    color: #fff;
+}
+.screeningPreventionClass .item-avatar {
+	padding-left : 15px !important;
+}
+.screeningPreventionClass  .cardheadings p {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #636363;
+}
+span.upto-class {
+    font-size: 13px;
+}
+span.points-class {
+    font-size: 14px;
+    color: #539908;
+}
+.screeningPreventionClass tspan {
+    fill: #fff;
+}
+.circleSteps {
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    background: #0079c2;
+    margin-bottom: 30px;
+}
+
+.circleSteps canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#newAssessmentForm *::-webkit-input-placeholder {
+  color: #808080 !important;
+}
+#newAssessmentForm *:-moz-placeholder {
+  color: #808080 !important;
+}
+#newAssessmentForm *:-ms-input-placeholder { /* IE10+ */
+  color: #808080 !important;
+}
+
+#newAssessmentForm .button.button-positive {
+    border-color: transparent;
+    background-color: #e6b800;
+    color: #fff;
+}
+#newAssessmentForm .button.button-block, .button.button-full {
+    margin-top: 0px;
+    margin-bottom: 0px;
+	border-radius: 0;
+}
+#newAssessmentForm .bar {
+    padding: 0px;
+}
+
+#newAssessmentForm .borderAssessment
+{
+	border-bottom: 2px solid #ddd !important;
+}
+
+#newAssessmentForm input[type="file"] {
+    display: none;
+}
+#newAssessmentForm .custom-file-upload {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    cursor: pointer;
+	line-height: 1.35;
+	color: #808080;
+	font-size: 14px !important;
+}
+
+#newAssessmentForm .item {
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+#newVaccinationForm *::-webkit-input-placeholder {
+  color: #808080 !important;
+}
+#newVaccinationForm *:-moz-placeholder {
+  color: #808080 !important;
+}
+#newVaccinationForm *:-ms-input-placeholder { /* IE10+ */
+  color: #808080 !important;
+}
+
+#newVaccinationForm .button.button-positive {
+    border-color: transparent;
+    background-color: #e6b800;
+    color: #fff;
+}
+#newVaccinationForm .button.button-block, .button.button-full {
+    margin-top: 0px;
+    margin-bottom: 0px;
+	border-radius: 0;
+}
+#newVaccinationForm .bar {
+    padding: 0px;
+}
+
+#newVaccinationForm .borderAssessment
+{
+	border-bottom: 2px solid #ddd !important;
+}
+
+#newVaccinationForm input[type="file"] {
+    display: none;
+}
+#newVaccinationForm .custom-file-upload {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    cursor: pointer;
+	line-height: 1.35;
+	color: #808080;
+	font-size: 14px !important;
+}
+
+#newVaccinationForm .item {
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+#newDeclarationForm *::-webkit-input-placeholder {
+  color: #808080 !important;
+}
+#newDeclarationForm *:-moz-placeholder {
+  color: #808080 !important;
+}
+#newDeclarationForm *:-ms-input-placeholder { /* IE10+ */
+  color: #808080 !important;
+}
+
+#newDeclarationForm .button.button-positive {
+    border-color: transparent;
+    background-color: #e6b800;
+    color: #fff;
+}
+#newDeclarationForm .button.button-block, .button.button-full {
+    margin-top: 0px;
+    margin-bottom: 0px;
+	border-radius: 0;
+}
+#newDeclarationForm .bar {
+    padding: 0px;
+}
+
+#newDeclarationForm .borderAssessment
+{
+	border-bottom: 2px solid #ddd !important;
+}
+
+#newDeclarationForm input[type="file"] {
+    display: none;
+}
+#newDeclarationForm .custom-file-upload {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    cursor: pointer;
+	line-height: 1.35;
+	color: #808080;
+	font-size: 14px !important;
+}
+
+#newDeclarationForm .item {
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+
+#documentsSubmitForm *::-webkit-input-placeholder {
+  color: #808080 !important;
+}
+#documentsSubmitForm *:-moz-placeholder {
+  color: #808080 !important;
+}
+#documentsSubmitForm *:-ms-input-placeholder { /* IE10+ */
+  color: #808080 !important;
+}
+
+#documentsSubmitForm .button.button-positive {
+    border-color: transparent;
+    background-color: #e6b800;
+    color: #fff;
+}
+#documentsSubmitForm .button.button-block, .button.button-full {
+    margin-top: 0px;
+    margin-bottom: 0px;
+	border-radius: 0;
+}
+#documentsSubmitForm .bar {
+    padding: 0px;
+}
+
+#documentsSubmitForm .borderAssessment
+{
+	border-bottom: 2px solid #ddd !important;
+}
+
+#documentsSubmitForm input[type="file"] {
+    display: none;
+}
+#documentsSubmitForm .custom-file-upload {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    cursor: pointer;
+	line-height: 1.35;
+	color: #808080;
+	font-size: 14px !important;
+}
+
+#documentsSubmitForm .item {
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+div.chart path {
+    stroke-width: 0;
+}
+
+#preventiveHealthChecks table {
+    width: 100%;
+
+}
+#preventiveHealthChecks table tbody tr th{
+
+    padding: 4px 4px 4px 10px;
+    
+}
+#preventiveHealthChecks table tbody tr td{
+
+        padding: 8px 8px 8px 10px;
+    
+}
+#preventiveHealthChecks table tbody tr:nth-child(1){
+        background: #f2f2f2;
+    
+}
+#preventiveHealthChecks table tbody tr td:nth-child(3){
+    text-align: right;
+    padding-right: 15px;
+    
+}
+#preventiveHealthChecks table-bordered{
+    border-top: 1px solid #ddd !important;
+    border-bottom: 1px solid #ddd !important;
+    border-left: none !important;
+    border-right: none !important;
+
+}
+#preventiveHealthChecks .button.button-positive {
+    border-color: transparent;
+    background-color: #e6b800;
+    color: #fff;
+}
+#preventiveHealthChecks .button.button-block, .button.button-full {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 0;
+}
+#preventiveHealthChecks .bar {
+    padding: 0px;
+}
+#preventiveHealthChecks .doing-well-div{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -11%;
+    background-color: #3acbac;
+    width: 50%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: #fff;
+    font-size: 11px;
+}
+#preventiveHealthChecks .table-responsive{
+    color: #959595;
+}
+
+#loginpage {
+    background: url(../img/bg-login.png);
+    height: 100%;
+    background-size: 100% 100%;
+    width: 100%;
+}
+.roundProgressBarEffAge {
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    background: #0079c2;
+    margin-bottom: 30px;
+}
+
+.roundProgressBarEffAge canvas {
+  max-width: 100%;
+  max-height: 100%;
+}
+.roundProgressBarSteps {
+    height: 200px;
+    padding: 40px;
+    text-align: center;
+    background: #0079c2;
+    margin-bottom: 30px;
+    min-height: 200px !important;
+}
+
+.roundProgressBarSteps canvas {
+  max-width: 70%;
+  max-height: 70%;
+}
+
+#loginpage input[type], #signup input[type] {
+    text-align: center;
+}
+
+.invalidMessageSignup {
+    color: #efb11b;
+    text-align: center;
+    padding-top: 0.5em;
+}
+
+#registrationConfirm .signincontent{
+	background:url('../img/bg-login2.png');
+	height: 100%;
+    background-size: 100% 100%;
+    width: 100%;
+} 
+
+#forgotPass .signincontent{
+	background:url('../img/bg-login2.png');
+	height: 100%;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+#newPass .signincontent{
+	background:url('../img/bg-login2.png');
+	height: 100%;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+#registrationConfirm .headigncontent{
+	padding-top:20%;
+	text-align: center;	
+}
+#registrationConfirm .headigncontent h3{
+	color:white !important;
+	    font-weight: 400;
+}
+
+#forgotPass .headigncontent{
+	padding-top:20%;
+	text-align: center;	
+}
+#forgotPass .headigncontent h3{
+	color:white !important;
+	    font-weight: 400;
+}
+
+#newPass .headigncontent{
+	padding-top:20%;
+	text-align: center;	
+}
+#newPass .headigncontent h3{
+	color:white !important;
+	    font-weight: 400;
+}
+
+.backbutton{
+	text-align: center;
+    margin: 0 auto;
+    /* top: 90%;
+    position: absolute; */
+    width: 100%;
+	margin-top: 60%;
+}
+.backbutton img{
+	width:15%;
+}
+
+#registrationConfirm .item , #forgotPass .item, #newPass .item{
+    background-color: transparent;
+    border-right: 0px;
+    border-left: 0px;
+    line-height: 35px;
+}
+#registrationConfirm label , #forgotPass label , #newPass label{
+    border-bottom: 1px solid #43a7d9 !important;
+}
+
+#registrationConfirm .button.button-positive , #forgotPass .button.button-positive, #newPass .button.button-positive {
+    background-color: #efb11b !important;
+    border-radius: 25px !important;
+    margin-top: 10px;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #ffe400;
+}
+#registrationConfirm input[type], #forgotPass input[type], #newPass input[type]{
+    text-align: center;
+}
+#registrationConfirm input , #forgotPass input[type] , #newPass input[type]{
+    color: #ffffff !important;
+}
+
+.userNameInner
+{
+	color: #ffffff !important;
+	margin-top: 5px;
+    margin-bottom: 5px !important;
+    font-size: 22px;
+}
+
+#myPolicies .status1 {
+    border-left:3px solid #6bb807;
+	margin-left: -15px;
+}
+
+#myPolicies .status2 {
+   border-left:3px solid #efb11b;
+	margin-left: -15px;
+}
+
+#myPolicies .status3 {
+    border-left:3px solid #f42323;
+	margin-left: -15px;
+}
+
+#myPolicies .amount1 {
+	color : #6bb807;
+	font-size: 14px;    
+	padding-top: 1em;
+}
+
+#myPolicies .amount2 {
+   color : #efb11b;
+   font-size: 14px;    
+	padding-top: 1em;
+}
+
+#myPolicies .amount3 {
+   color : #f42323;
+   font-size: 14px;    
+	padding-top: 1em;
+}
+
+#myPoliciesDetails .amount1 {
+	color : #6bb807;
+	font-size: 16px;
+}
+
+#myPoliciesDetails .amount2 {
+   color : #efb11b;
+   font-size: 16px;
+}
+
+#myPoliciesDetails .amount3 {
+   color : #f42323;
+   font-size: 16px;
+}
+
+.noDataError {
+    text-align: center;
+    color: #efb11b;
+    font-weight: 700;
+    font-size: 16px;
+	padding-top: 1em;
+}
+
+.noDataImg
+{
+	    height: 100px;
+}
+.fitness-reward .active-image {
+    background: url(../img/icons/icon-currentstatus.svg);
+    background-repeat: no-repeat;
+    height: 50px;
+    position: absolute;
+    top: 90%;
+}
+.lower-part {
+    width: 100%;
+    float: left;
+}
+	
+#stepsSummaryList .bp-details {
+    float: none !important;
+    width : 100%;
+    margin-bottom : 20px;
+}
+.bar-img{
+    width: 25px !important;
+    height: 25px !important;
+}
+.bar-img-div{
+    width:10%;
+    float: left;
+    margin-left: 9%;
+}
+
+#newDeclaration *::-webkit-input-placeholder {
+  color: #808080 !important;
+}
+#newDeclaration *:-moz-placeholder {
+  color: #808080 !important;
+}
+#newDeclaration *:-ms-input-placeholder { /* IE10+ */
+  color: #808080 !important;
+}
+
+#newDeclaration .button.button-positive {
+    border-color: transparent;
+    background-color: #e6b800;
+    color: #fff;
+}
+#newDeclaration .button.button-block, .button.button-full {
+    margin-top: 0px;
+    margin-bottom: 0px;
+	border-radius: 0;
+}
+#newDeclaration .bar {
+    padding: 0px;
+}
+
+#newDeclaration .borderAssessment
+{
+	border-bottom: 2px solid #ddd !important;
+}
+
+#newDeclaration input[type="file"] {
+    display: none;
+}
+#newDeclaration .custom-file-upload {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    cursor: pointer;
+	line-height: 1.35;
+	color: #808080;
+	font-size: 14px !important;
+}
+
+#newDeclaration .item {
+    border-width: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+}
+.a4 img{
+    position: ABSOLUTE;
+    width: 40px;
+    z-index: 9999;
+}
+.loading{
+    position: absolute;
+    top:0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999999;
+    background: rgba(255,255,255,0.5);
+}
+.loading span{
+    position: absolute;
+   
+    width: 100%;
+   left:50%;
+   margin-left:-50%;
+   top:45%;
+   text-align: center;
+   
+}
+.highlightDay{
+    background:#3acbac !important;
+    color:#fff !important;
+}
+.pre-savings{
+   /* position: absolute;*/
+/*    width: 100%;
+    height: 100%;*/
+   /* left: 50%;
+    margin-left: -50%;
+    top:50%;
+    margin-top:-50%;*/
+    margin: auto;
+
+}
+#preSavings ion-content{
+    background: #0079C2;
+}
+#preSavings .savings-list .list{
+    position: absolute;
+    margin-top: 37% !important;
+    width: 100%;
+}
+#preSavings .card,#preSavings .list-inset{
+    background-color:#0079C2 !important;
+}
+#preSavings .individual-display{
+    padding-left: 55px;
+}
+#preSavings text[text-anchor='middle'] tspan{
+    fill: #ffffff !important;
+	font-size: 19px!important;
+}
+
+#cholestrolSaving text[fill="#000000"] tspan{
+    fill: #ffffff !important;
+}
+
+#bmiSavings text[text-anchor='middle'] tspan{
+    fill: #ffffff !important;
+}
+
+#fitnessRewardSavings text[fill="#000000"] tspan{
+    fill: #ffffff !important;
+}
+
+#bpSavings text[fill="#000000"] tspan{
+    fill: #ffffff !important;
+}
+
+.spinner svg {
+  width: 40% !important;
+  height: 85px !important;
+} 
+ .sub-footer{           
+         
+           margin-left: 5px;
+        }
+
+        
+.division{
+  width:19%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 6px;
+  border: 1px solid #a2a5a4;
+  margin-right: 2px;
+  float:left;
+}
+div#preffered {
+   
+    z-index: 0;
+    
+}
+        
+.img-premium{
+            
+            margin-top: -111px;
+             z-index: -1;
+            position: relative;
+        }
+
+        
+         div.footer {
+    width: 100%;
+    height:130px;
+         bottom:0px;
+        position:fixed;
+             }
+        
+    .footer-division{
+          width:33%;
+          height:130px;
+          text-align: center;
+          vertical-align: middle;
+          line-height: 50px;
+          margin-right: 2px;
+          float:left;
+}
+        
+        label.number{
+            font-size: 44px;
+            float: left;
+            padding-left: 32px;
+        }
+        
+        div#heath {
+    background:  #3ACBAC;
+            color: white;
+            font-size: 26px;
+    
+}
+        
+        div#maximum {
+    background:  #EECB77;
+            color: white;
+            font-size: 26px;
+    
+}
+        
+        div#bmi {
+    background:  #EE2875;
+    color: white;
+    font-size: 26px;
+    
+}
+        
+        
+    
+div.current-BMI {
+    width: 20px;
+    height: 20px;
+    bottom: 160;
+    position: fixed;
+    background-color: #00A652;
+    margin-left: 258px;
+}
+        
+        div.BMI-Policy {
+    width: 20px;
+    height: 20px;
+    bottom: 160;
+    position: fixed;
+    background-color: #EECB77;
+    margin-left: 455px;
+}
+
+
+.current-BMI{
+    clear: both;
+   
+}
+
+#green-sq{
+     width: 10px;
+    height: 10px;
+    background: #00A652; 
+    margin-top: 10%;
+}
+.pre-img{
+       
+     position: absolute;
+    height: 60px;
+  
+}

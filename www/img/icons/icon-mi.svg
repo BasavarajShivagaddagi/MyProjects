@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F26122;}
+	.st1{display:none;}
+	.st2{display:inline;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="Layer_1">
+	<circle class="st0" cx="15" cy="15" r="14"/>
+</g>
+<g id="Layer_2" class="st1">
+	<g class="st2">
+		<circle class="st3" cx="15" cy="4.9" r="1.7"/>
+		<circle class="st3" cx="15" cy="9.9" r="1.7"/>
+		<circle class="st3" cx="15" cy="15" r="1.7"/>
+		<circle class="st3" cx="15" cy="20" r="1.7"/>
+		<circle class="st3" cx="15" cy="25.1" r="1.7"/>
+		<circle class="st3" cx="20" cy="9.9" r="1.7"/>
+		<circle class="st3" cx="20" cy="15" r="1.7"/>
+		<circle class="st3" cx="20" cy="20" r="1.7"/>
+		<circle class="st3" cx="9.9" cy="9.9" r="1.7"/>
+		<circle class="st3" cx="9.9" cy="15" r="1.7"/>
+		<circle class="st3" cx="9.9" cy="20" r="1.7"/>
+		<circle class="st3" cx="4.9" cy="15" r="1.7"/>
+		<circle class="st3" cx="25.1" cy="15" r="1.7"/>
+	</g>
+</g>
+<g id="Layer_3">
+	<g>
+		<rect x="22.1" y="8.5" class="st3" width="3.2" height="13"/>
+		<rect x="4.6" y="8.6" class="st3" width="3.2" height="12.8"/>
+		<rect x="10.4" y="13.8" class="st3" width="3.2" height="7.7"/>
+		<path class="st3" d="M16,8.6H4.6v2.8h9.9c1.1,0,2.1,0.9,2.1,2.1v8h3.2v-9.1C19.8,10.3,18.1,8.6,16,8.6z"/>
+	</g>
+</g>
+</svg>

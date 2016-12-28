@@ -1,0 +1,83 @@
+<ion-view view-title="" cache-view="false" id="myPolicies">
+
+    <ion-content class="headerall">
+
+       <div class="homeText userImg">
+            <img class="img-circular" src="img/user.jpg" />
+			<div>
+				<p class="userNameInner" ng-model="user">{{user}}</p>
+			</div>
+
+        </div>
+		
+		<div class="list" ng-repeat="policies in policies" >
+            <a class="item item-avatar" href="" ng-click="viewPolicyDetails(policies)">
+                
+				
+				<div class = "row"   ng-class="getCornersCol(policies.policy_status)">
+				  
+					<div class = "col col-60" style="padding-left: 1.5em;">
+						<div class = "row">
+							<p class="" style="color:#959595;font-size: 12px;">Policy Number</p><br/>
+						
+						</div>
+					    <div class = "row">
+							
+							<p class="" style="color:#4b4b4b;font-size: 14px;font-weight: 500;">{{ policies.policy_number }}</p>
+						</div>
+						<div class = "row">
+							<p class="" style="color:#959595;font-size: 12px;padding-top: 0.5em;">Policy Line of business</p><br/>
+							
+						</div>
+						<div class = "row">
+							<p class="" style="color:#4b4b4b;font-size: 14px;font-weight: 500;">{{ policies.policy_line_of_business }}</p>
+						</div>
+					</div>
+					   
+					<div class = "col col-40" style="padding-left: 1.5em;"> 
+						<div class = "row" style="float: right;" >
+							<p class="" ng-class="getCornersCol1(policies.policy_status)">{{ policies.policy_coverageamount}}</p>
+						</div>
+						
+						<div class = "row" style="padding-left: 1.4em;">
+							<div class="" style="color:#959595;font-size: 12px;    padding-top: 0.5em;">{{ policies.policy_issue_date | date:' M-d-yyyy'}}</div>
+						</div>
+					</div>
+					   
+					    <i class="icon ion-chevron-right popImg iconAlign"></i>
+					   
+				</div>
+            </a>
+			
+        </div>
+		 <div ng-show="myvalue" class="noDataError">Service unavailable</div>
+		<div ng-show="myvalue1" class="noDataError"><img src="img/icon_sad-face.svg" class="noDataImg" /></div>
+		
+    </ion-content>
+	<ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies__selected.svg" />
+					<p class="footerText footerText1">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+					<p class="footerText">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+</ion-view>

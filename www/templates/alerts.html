@@ -1,0 +1,43 @@
+<ion-view view-title="Alerts" id="alerts">
+  <ion-content>
+  <div class="alerts-cls">
+ 	<div class="button-bar alerts-button">
+  		<a style="color:#fff !important;" class="button button-small button-positive notifications" ng-click="showNotifications();">Notifications</a>
+  		<a style="background-color:#fff;color:#0079c2 !important;" class="button button-small button-positive reminders" ng-click="showReminders();">Reminders</a>  		
+	</div>
+  </div>
+	<div class="list alerts-list">
+	   <div class="item" ng-repeat = "item in alertDetails">
+	   		<h3>{{item.heading}}</h3>
+	   		<p>{{item.content}}</p>
+	   </div>
+	</div>
+  
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview.svg" />
+					<p class="footerText">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,39 @@
+<ion-view view-title="Calories Burned" id="stepsSummaryList">
+  <ion-content>
+      <round-progress-bar-steps ng-if="steps"></round-progress-bar-steps>
+
+      <div class="steps-tab-main-div">
+        <a href="#/app/caloriesBurnedSummaryList" ><div class="steps-tab-first-div" style="background-color:#3acbac"><img class="steps-tab-img" src="img/icons/icon-summary-graph_selected(1).svg"></div></a>
+        <a href="#/app/caloriesBurnedSummaryDaysList" style="background-color:#eee"><div class="steps-tab-sec-div"><img class="steps-tab-img" src="img/icons/icon-summary-list.svg"></div></a>
+        <a href="#/app/caloriesCalendar" style="background-color:#eee"><div class="steps-tab-th-div" style="background-color:#eee"><img class="steps-tab-img" src="img/icons/icon-summary-activity.svg"></div></a>
+        <div class="steps-tab-fou-div" style="background-color:#eee"><img class="steps-tab-img" src="img/icons/icon-summary-bp.svg"></div>
+      </div>
+      <br/><br/><br/>
+      <div class="dropdown-box">
+        Time Period: 
+        <select name="weeks">
+          <option value="weekly">Weekly View</option>
+          <option value="monthly">Monthly View</option>
+        </select>
+      </div>
+      <p></p>
+
+      <div style="margin-bottom:10px;">
+        <ul>
+          <li style="float:left; width : 14%;text-align : center;font-size:10px;" ng-repeat="chart in chartVal | orderBy : 'day'">{{chart.value}}</li>
+        <ul>
+      </div>
+      <div style="background-image: url('img/bg-graph.jpg');">
+        <div class="steps-on-graph-line">
+          <div class="steps-on-graph">{{stepsOnGraphsc}}</div>
+        </div>
+        <div id="area-example" style="height: 227px;width:100%;float:left;"></div>  
+      </div> 
+     
+
+  </ion-content>
+      <ion-footer-bar align-title="left" class="bar-assertive app-footer" style="width:102%;">
+  <div class="send-mail-main-div"><div class="send-mail"><span class="glyphicon glyphicon-envelope send-env"></span>Send Mail</div><br/></div>
+  </ion-footer-bar> 
+
+</ion-view>

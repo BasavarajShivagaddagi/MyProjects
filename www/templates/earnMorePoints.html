@@ -1,0 +1,41 @@
+<ion-view view-title="How to earn more points" id="earnMorePointsId">
+  <ion-content>
+<div class="list">
+   <div  ng-repeat="(key, activity) in earnMorePointsResponse" style="position:relative;">
+    
+     <div class="item earn-more-points-items"  ng-repeat="act in activity">
+     	<!-- <p class="earn-more-points-value" style="float:right;;color:#B1B1B1;font-size:16px;">sa<p> -->
+     		<h3 class="earn-more-points-heading" style="color:#666666;font-size:16px;float:left">{{act.sub_activity_name}}</h3>
+			<h3 class="earn-more-points-points" style="float:right;color:#72B609;font-size:16px;">{{act.points_per_event}}</h3>	
+     		    
+     </div>
+     
+   </div>
+</div>  </ion-content>
+<ion-footer-bar align-title="left" class="bar-assertive">
+			<div class="row" style="text-align: center;">
+				<a class="col footerBorder" href="#/app/myPolicies">
+					<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+					<p class="footerText">MY POLICIES</p>
+				</a>
+				<a class="col footerBorder" href="#/app/myFitDevice">
+					<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+					<p class="footerText">FITNESS DEVICES</p>
+				</a>
+				<!-- <a class="col footerBorder" href="#/app/healthfitness">
+					<img class="footerImg" src="img/icons/icon-footer-healthoverview_selected.svg" />
+					<p class="footerText footerText1">HEALTH OVERVIEW</p>
+				</a> -->
+
+				<a class="col footerBorder" href="#/app/newsFeed">
+					<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+					<p class="footerText">NEWS FEED</p>
+				</a>
+
+				<a class="col" href="#/app/myProfile">
+					<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+					<p class="footerText">MY PROFILE</p>
+				</a>
+			</div>
+		</ion-footer-bar>
+</ion-view>

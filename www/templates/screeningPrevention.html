@@ -1,0 +1,85 @@
+<ion-view name="login-view" view-title="Screening and Prevention" cache-view="false"  id="fitness" class="screeningPreventionClass">
+<ion-content>
+	<div class="chartarea">
+			 
+			<div class="total-fit-count"><p class="tot-points">Total Points {{preventionScreening + assesments + vaccination + smokerTest}}</p> <p class=""><span></span></p></div>
+			 <fusioncharts ng-if="myDataSource"
+				width="100%" 
+				height="200"
+				type="column2d"
+				datasource="{{myDataSource}}" showBorder="0"
+			></fusioncharts>		   
+	</div>	
+	<div class="list">
+
+		<a class="item item-avatar" ng-click="screeningAndPreventionDetails('preventiveHealthChecks')"> 
+			<div class="cardheadings"><p>Preventive Health Checks</p></div>
+			<div class="carddetails">
+				<span class="upto-class">Upto</span><br/>
+				<span class="points-class">{{preventionScreening}} Points</span>		
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" ng-click="screeningAndPreventionDetails('assessments')">
+		 
+			<div class="cardheadings"><p>Assessments</p></div>
+			<div class="carddetails">
+				<span class="upto-class">Upto</span><br/>
+				<span class="points-class">{{assesments}} Points</span>		
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" ng-click="screeningAndPreventionDetails('vaccinations')">
+		  
+			<div class="cardheadings"><p>Vaccinations</p></div>
+			<div class="carddetails">
+				<span class="upto-class">Upto</span><br/>
+				<span class="points-class">{{vaccination}} Points</span>	
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		<a class="item item-avatar" ng-click="screeningAndPreventionDetails('nonSmokerDeclaration')">
+		  
+			<div class="cardheadings"><p>Non Smoker Declaration</p></div>
+			<div class="carddetails">
+				<span class="upto-class">Upto</span><br/>
+				<span class="points-class">{{smokerTest}} Points</span>		
+			</div>			
+			<div class="cardiconpos"><i class="icon ion-ios-arrow-right"></i></div>
+		</a>
+		
+		
+	</div>
+	
+	
+</ion-content>
+<ion-footer-bar align-title="left" class="bar-assertive">
+	<div class="row" style="text-align: center;">
+		<a class="col footerBorder" href="#/app/myPolicies">
+			<img class="footerImg" src="img/icons/icon-footer-mypolicies.svg" />
+			<p class="footerText">MY POLICIES</p>
+		</a>
+		<a class="col footerBorder" href="#/app/myFitDevice">
+			<img class="footerImg" src="img/icons/icon-footer-mydivices.svg" />
+			<p class="footerText">FITNESS DEVICES</p>
+		</a>
+		<!-- <a class="col footerBorder" href="#/app/healthfitness">
+			<img class="footerImg" src="img/icons/icon-footer-healthoverview_selected.svg" />
+			<p class="footerText footerText1">HEALTH OVERVIEW</p>
+		</a> -->
+
+		<a class="col footerBorder" href="#/app/newsFeed">
+			<img class="footerImg" src="img/icons/icon-footer-newsfeed.svg" />
+			<p class="footerText">NEWS FEED</p>
+		</a>
+
+		<a class="col" href="#/app/myProfile">
+			<img class="footerImg" src="img/icons/icon-footer-profile.svg" />
+			<p class="footerText">MY PROFILE</p>
+		</a>
+	</div>
+</ion-footer-bar>
+</ion-view>

@@ -1,0 +1,65 @@
+<ion-view name="login-view" cache-view="false" hide-nav-bar="true" id="signup">
+    <ion-content class="signincontent">
+        <div class="headigncontent">
+            <h3>Sign Up</h3>
+        </div>
+
+        <form id="signupForm" name="signupForm" ng-submit="signupForm.$valid && submitted && submitSignUP()" class="form_content" novalidate="">
+            <p style="text-align:center;color:#efb11b;">{{errorMessage}}</p>
+
+            <div class="ion-list">
+                <label class="item item-input" style="border-top: 0px;border-bottom: 0px;">
+							<input ng-model="sign.UsrPhoneNum" type="text" id="UsrPhoneNum" name="UsrPhoneNum" placeholder="Mobile Number" class="iconc" autocorrect="off"  required />
+						</label>
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.UsrPhoneNum.$error.required">Enter Mobile Number</p>
+
+                <label class="item item-input" style="border-top: 0px;border-bottom: 0px;">	
+							<input ng-model="sign.UserEmailId" type="email" id="UserEmailId" name="UserEmailId" placeholder="Email Address" class="iconc" autocorrect="off"  required />
+						</label>
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.UserEmailId.$error.required">Enter Email Address</p>
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.UserEmailId.$error.email">Enter a valid email Id</p>
+                <label class="item item-input" style="border-top: 0px;border-bottom: 0px;">     
+							
+							<input ng-model="sign.UserPwd" type="password" id="UserPwd" name="UserPwd" placeholder="Password" class="iconc" required />
+						</label>
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.UserPwd.$error.required">Enter Password</p>
+
+                <label class="item item-input" style="border-top: 0px;border-bottom: 0px;">     
+							
+							<input ng-model="sign.ConfirmPassword" type="password" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" class="iconc" required />
+						</label>
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.ConfirmPassword.$error.required">Enter Confirm Password</p>
+
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.ConfirmPassword.$viewValue != '' && (signupForm.UserPwd.$viewValue != signupForm.ConfirmPassword.$viewValue)">Fields do not match!</p>
+
+                <label class="item item-input" style="border-top: 0px;border-bottom: 0px;">
+							
+							<input ng-model="sign.Address" type="text" id="Address" name="Address" placeholder="Address" class="iconc" autocorrect="off"  required />
+						</label>
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.Address.$error.required">Enter Address</p>
+                <label class="item item-input" style="border-top: 0px;border-bottom: 0px;">
+							
+							<input ng-model="sign.Country" type="text" id="Country" name="Country" placeholder="Country" class="iconc" autocorrect="off"  required />
+						</label>
+                <p class="invalidMessageSignup" ng-show="submitted && signupForm.Country.$error.required">Enter Country</p>
+                <label class="item item-input" style="border-top: 0px;border-bottom: 0px;">
+							
+							<input ng-model="sign.ZipCode" type="text" id="ZipCode" name="ZipCode" placeholder="Zip Code" class="iconc" autocorrect="off"  required />
+						</label>
+                <p class="invalidMessageSignup" ng-show="sign.submitted && signupForm.ZipCode.$error.required">Enter Zip Code</p>
+            </div>
+            <div class="signupbutton">
+                <button class="button button-block button-positive" ng-click="submitted=true">Sign Up</button>
+            </div>
+
+        </form>
+
+        <div class="accountmsg">
+            <span>Already have an account?</span>
+
+            <span class="createaccount" ng-click="login();">
+					Sign In</span>
+        </div>
+
+    </ion-content>
+</ion-view>
